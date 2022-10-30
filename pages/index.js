@@ -29,8 +29,8 @@ export default function Home({ data }) {
         </div>
         <div className={styles.stjoseph__header_image}>
           <Image src="/churchp.png" alt="Picture of the author"
-            width="350"
-            height="300" />
+            width="1750"
+            height="1700" />
         </div>
       </div >
 
@@ -42,15 +42,15 @@ export default function Home({ data }) {
       </div>
 
 
-      <div className='gpt3__possibility section__padding'>
-        <div className='gpt3__possibility-image'>
-          <Image src="/stjoseph.jpg" alt="joseph" width="300" height="250"/>
+      <div className={styles.home__possibility}>
+        <div className={styles.home__possibility_image}>
+          <Image className={styles.home__possibility_image_tag} src="/stjoseph.jpg" alt="joseph" width="650" height="600"/>
         </div>
-        <div className='gpt3__possibility-content'>
+        <div className={styles.home__possibility_content}>
           <h4>
             Our Patron Saint
           </h4>
-          <h1 className='gradient__text'>St Joseph</h1>
+          <h1 className={styles.gradient__text}>St Joseph</h1>
           <p>“In Joseph … heads of the household are blessed with the unsurpassed model of fatherly watchfulness and care.”</p>
           <p>Everything we know about the husband of Mary and the foster father of Jesus comes from Scripture
             and that has seemed too little for those who made up legends about him.
