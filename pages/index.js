@@ -1,9 +1,9 @@
 import Image from 'next/image'
-// import church from '/churchp.png';
-// import joseph from '/assets/stjoseph.jpg';
+import Typed from 'typed.js';
 import Bloglist from '../components/bloglist/Bloglist';
 import styles from '../styles/Home.module.css'
 import { blogList } from '../config/data';
+import { useEffect, useRef } from 'react';
 
 export const getStaticProps = async () => {
   return {
@@ -14,11 +14,37 @@ export const getStaticProps = async () => {
 }
 
 export default function Home({ data }) {
+
+  const el = useRef(null);
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        '“നിങ്ങൾ ചെയ്യുന്നതെല്ലാം സ്നേഹത്തിൽ ചെയ്‍വിൻ.” — 1 കൊരിന്ത്യർ 16:14',
+        '“Everything should be done in love.” — 1 Corinthians 16:14',
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      backDelay: 2700,
+      loopCount: Infinity,
+      showCursor: false,
+    }
+
+    typed.current = new Typed(el.current, options);
+
+    return() => {
+      typed.current.destroy();
+    }
+  
+  }, [])
+  
   return (
     <>
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
-          <h1 className={styles.gradient__text}>“Everything should be done in love.” — 1 Corinthians 16:14</h1>
+          <h1 className={styles.gradient__text} ref={el} />
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
             St. Joseph’s Cathedral located at Palayam is an ancient church in India where believers from far and
             wide flock to receive heavenly blessings.
