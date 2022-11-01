@@ -14,6 +14,32 @@ export const getStaticProps = async () => {
   }
 }
 
+const Feature = ({title,text1,text,text2,text3})=>(
+  <div className={styles.church__features_container__feature}>
+    <div className={styles.church__features_container__feature_title}>
+        <h1>
+          {title}
+        </h1>
+        <div />
+    </div>
+    <div className={styles.church__features_container_feature_text}>
+      <p className={styles.text1}>
+        {text1}
+      </p>
+      <p>
+      {text}
+      </p>
+      <p className={styles.text1}>
+        {text2}
+      </p>
+      <p>
+      {text3}
+      </p>
+    </div>
+
+  </div>
+)
+
 export default function Home({ data }) {
 
   const el = useRef(null);
@@ -93,9 +119,8 @@ export default function Home({ data }) {
         </div>
       </div>
 
-
+      {/*Priests Start*/}
       <div className={styles.stjoseph__brand_container}>
-        {/* <Feature title="Principles" text=" The principles which will be followed to give a democratic progressive and Secular vision to all the youth of our generation" /> */}
         <h1 className={styles.gradient__text}> "OUR SPIRITUAL FATHERS" </h1>
         <p>-Walk by faith not by light-</p>
         <div className={styles.stjoseph__brand_container_cards}>
@@ -128,6 +153,35 @@ export default function Home({ data }) {
           </div>
         </div>
       </div>
+
+      {/*Mass Timings Start*/}
+      <div className={styles.church__timing}>
+    <div className={styles.church__timing_heading}>
+      <h1 className={styles.gradient__text}>Mass Timings</h1>
+    </div>
+    <div className={styles.church__timing_container}>
+    <div className={styles.church__timing_contained}>
+      <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
+      
+      <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am"  text2="Weekdays" text3= "6.30 pm"  />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
+      
+      <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am"  text2="Tuesday" text3= "6.00 pm" />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am"  />
+  
+      <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm"  text2="Saturday" text3= "5.30 pm"  />
+    </div>  
+    </div>
+  
+          </div>
+
     </>
   )
 }
