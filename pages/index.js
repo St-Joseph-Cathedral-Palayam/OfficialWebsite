@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Typed from 'typed.js';
 import Bloglist from '../components/bloglist/Bloglist';
@@ -34,14 +35,15 @@ export default function Home({ data }) {
 
     typed.current = new Typed(el.current, options);
 
-    return() => {
+    return () => {
       typed.current.destroy();
     }
-  
+
   }, [])
-  
+
   return (
     <>
+      {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
           <h1 className={styles.gradient__text} ref={el} />
@@ -60,17 +62,17 @@ export default function Home({ data }) {
         </div>
       </div >
 
-
-      <div className='Aboutus-wrap'>
-        <h2 className='gradient__text'>News & Updates</h2>
+      {/* Blog Start */}
+      <div className={styles.Aboutus_wrap}>
+        <h2 className={styles.gradient__text}>News & Updates</h2>
         {console.log(data)}
         <Bloglist blogs={data} />
       </div>
 
-
+      {/* Patron Start */}
       <div className={styles.home__possibility}>
         <div className={styles.home__possibility_image}>
-          <Image className={styles.home__possibility_image_tag} src="/stjoseph.jpg" alt="joseph" width="650" height="600"/>
+          <Image className={styles.home__possibility_image_tag} src="/stjoseph.jpg" alt="joseph" width="650" height="600" />
         </div>
         <div className={styles.home__possibility_content}>
           <h4>
@@ -88,6 +90,42 @@ export default function Home({ data }) {
             some about the details of Joseph's genealogy but they both mark his descent from David, the
             greatest king of Israel (Matthew 1:1-16 and Luke 3:23-38). Indeed the angel who first tells Joseph
             about Jesus greets him as "son of David," a royal title used also for Jesus</p>
+        </div>
+      </div>
+
+
+      <div className={styles.stjoseph__brand_container}>
+        {/* <Feature title="Principles" text=" The principles which will be followed to give a democratic progressive and Secular vision to all the youth of our generation" /> */}
+        <h1 className={styles.gradient__text}> "OUR SPIRITUAL FATHERS" </h1>
+        <p>-Walk by faith not by light-</p>
+        <div className={styles.stjoseph__brand_container_cards}>
+          <div className={styles.stjoseph__blog_container__article}>
+            <div className={styles.stjoseph__blog_container__article_image}>
+              <Image src="/DSC00595.jpg" alt="blog" width="400" height="400"/>
+            </div>
+            <div className={styles.stjoseph__blog_container__article_content}>
+                <h3>Most Rev. Dr. Thomas J Netto</h3>
+                <p>Arch Bishop</p>
+            </div>
+          </div>
+          <div className={styles.stjoseph__blog_container__article}>
+            <div className={styles.stjoseph__blog_container__article_image}>
+              <Image src="/011.JPG" alt="blog" width="400" height="400"/>
+            </div>
+            <div className={styles.stjoseph__blog_container__article_content}>
+                <h3>Most Rev. Dr. Christudas Rajappan</h3>
+                <p>Auxiliary Bishop</p>
+            </div>
+          </div>
+          <div className={styles.stjoseph__blog_container__article}>
+            <div className={styles.stjoseph__blog_container__article_image}>
+              <Image src="/DSC01943.JPG" alt="blog" width="400" height="400"/>
+            </div>
+            <div className={styles.stjoseph__blog_container__article_content}>
+                <h3>Very Rev. Msgr. Nicholas T</h3>
+                <p>Parish Priest</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
