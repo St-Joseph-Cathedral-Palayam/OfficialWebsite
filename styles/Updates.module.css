@@ -1,0 +1,39 @@
+.stjoseph_updates_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+
+}
+
+.stjoseph_updates_cards{
+    margin: 1rem 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(250, 249, 249);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.stjoseph_updates_cards:hover{
+    box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
+}
+
+.stjoseph_updates_updates{
+    flex: 1;
+}
+
+.stjoseph_updates_news{
+    /* text-align: left; */
+    flex: 1;
+    margin-right: 200px;
+}
+
+.stjoseph_updates_unit{
+    text-align: left;
+    flex: 1;
+}
+
+.gradient__text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

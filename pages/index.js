@@ -5,6 +5,7 @@ import Bloglist from '../components/bloglist/Bloglist';
 import styles from '../styles/Home.module.css'
 import { blogList } from '../config/data';
 import { useEffect, useRef } from 'react';
+import Updates from '../components/Updates';
 
 export const getStaticProps = async () => {
   return {
@@ -89,11 +90,12 @@ export default function Home({ data }) {
       </div >
 
       {/* Blog Start */}
-      <div className={styles.Aboutus_wrap}>
+      {/* <div className={styles.Aboutus_wrap}>
         <h2 className={styles.gradient__text}>News & Updates</h2>
         {console.log(data)}
         <Bloglist blogs={data} />
-      </div>
+      </div> */}
+      <Updates />
 
       {/* Patron Start */}
       <div className={styles.home__possibility}>
