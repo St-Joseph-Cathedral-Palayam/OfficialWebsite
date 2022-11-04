@@ -90,11 +90,6 @@ export default function Home({ data }) {
       </div >
 
       {/* Blog Start */}
-      {/* <div className={styles.Aboutus_wrap}>
-        <h2 className={styles.gradient__text}>News & Updates</h2>
-        {console.log(data)}
-        <Bloglist blogs={data} />
-      </div> */}
       <Updates />
 
       {/* Patron Start */}
@@ -120,6 +115,34 @@ export default function Home({ data }) {
             about Jesus greets him as "son of David," a royal title used also for Jesus</p>
         </div>
       </div>
+
+      {/*Mass Timings Start*/}
+      <div className={styles.church__timing}>
+    <div className={styles.church__timing_heading}>
+      <h1 className={styles.gradient__text}>Mass Timings</h1>
+    </div>
+    <div className={styles.church__timing_container}>
+    <div className={styles.church__timing_contained}>
+      <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
+      
+      <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am"  text2="Weekdays" text3= "6.30 pm"  />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
+      
+      <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am"  text2="Tuesday" text3= "6.00 pm" />
+      </div>
+      <div className={styles.church__timing_contained}>
+      <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am"  />
+  
+      <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm"  text2="Saturday" text3= "5.30 pm"  />
+    </div>  
+    </div>
+  
+          </div>
 
       {/*Priests Start*/}
       <div className={styles.stjoseph__brand_container}>
@@ -156,33 +179,7 @@ export default function Home({ data }) {
         </div>
       </div>
 
-      {/*Mass Timings Start*/}
-      <div className={styles.church__timing}>
-    <div className={styles.church__timing_heading}>
-      <h1 className={styles.gradient__text}>Mass Timings</h1>
-    </div>
-    <div className={styles.church__timing_container}>
-    <div className={styles.church__timing_contained}>
-      <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
-      
-      <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am"  text2="Weekdays" text3= "6.30 pm"  />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
-      
-      <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am"  text2="Tuesday" text3= "6.00 pm" />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am"  />
-  
-      <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm"  text2="Saturday" text3= "5.30 pm"  />
-    </div>  
-    </div>
-  
-          </div>
+
 
     </>
   )

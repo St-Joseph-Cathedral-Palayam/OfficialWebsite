@@ -1,16 +1,12 @@
 import React from 'react';
-import styles from '../styles/Updates.module.css';
+import styles from '../styles/Update.module.css';
 import { Gallery } from "react-grid-gallery";
-import ImageGallery from 'react-image-gallery';
-import Image from 'next/image';
 import { blogList } from '../config/data';
+import NewsCard from './NewsCard';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
 
 const images = [
-    { src: "/blog01.png",width: 320, height: 174,  thumbnail: "/blog01.png", caption: 'adjshajhsjdk' ,      tags: [
-        { value: "Ocean", title: "Ocean" },
-        { value: "People", title: "People" },
-     ],},
     { src: "/011.JPG",  thumbnail: "/011.JPG" },
     { src: "/DSC00595.jpg", thumbnail: "/DSC00595.jpg" },
     { src: "/DSC00854.JPG", thumbnail: "/DSC00854.JPG" },
@@ -23,29 +19,23 @@ const images = [
     { src: "/image10.jpg", thumbnail: "/image10.jpg" },
 ];
 
-const NewsCard = ({ title, body, image }) => {
-    return (
-        <div className={styles.stjoseph_updates_cards}>
-            <h3>{title}</h3>
-            <p>{body}</p>
-            {image && (
-                <Image src={image} alt='alt' width="300" height="200" />
-            )}
-            <Link href='/'>Read more</Link>
-        </div>
-
-    )
-}
-
 const Updates = () => {
     return (
         <div className={styles.stjoseph_updates_container}>
             <div className={styles.stjoseph_updates_news}>
-                <h2 className={styles.gradient__text}>Latest News</h2>
+                <Link href="/updates">
+                    <div className={styles.stjoseph_updates_news_title}>
+                        <h2 className={styles.gradient__text}>Latest News </h2>
+                        <BsFillArrowRightCircleFill className={styles.arrowButton}/>
+                    </div>
+                </Link>
                 {blogList.map(e => (e.category === 'Updates') && <NewsCard key={e.id} title={e.title} body={e.category} />)}
             </div>
             <div className={styles.stjoseph_updates_updates}>
-                <h2 className={styles.gradient__text}>Updates</h2>
+                <div className={styles.stjoseph_updates_news_title}>
+                    <h2 className={styles.gradient__text}>Gallery </h2>
+                    <BsFillArrowRightCircleFill className={styles.arrowButton}/>
+                </div>
                 <Gallery images={images} onClick={images}/>
             </div>
 

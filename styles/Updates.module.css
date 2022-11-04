@@ -8,9 +8,12 @@
 .stjoseph_updates_cards{
     margin: 1rem 1rem;
     padding: 1rem 2rem;
+    width: 40vw;
     background-color: rgb(250, 249, 249);
     border-radius: 10px;
     transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
 }
 .stjoseph_updates_cards:hover{
     box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
@@ -34,6 +37,47 @@
 .gradient__text{
     background: var(--gradient-text);
     background-clip: text;
+    text-align: center;
+    font-size: 2.5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.stjoseph_updates_image{
+    border-radius: 10px;
+}
+
+
+.updatesGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 700px)  {
+    .updatesGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stjoseph_updates_cards{
+        width: auto;
+    }
+
+    .stjoseph_updates_image{
+        width: 150px;
+        height: 150px;
+    }
+
+    .stjoseph_updates_container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 ;
+    
+    }
+
+} 
+

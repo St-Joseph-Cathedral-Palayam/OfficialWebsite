@@ -7,12 +7,10 @@ const Menu = () => (
   <>
     <p>
       <Link href="/"> Home </Link> </p>
-    <p><Link href="/aboutus"> Blog & News</Link></p>
+    <p><Link href="/updates"> Updates</Link></p>
     <p><Link href="/priests"> Priests </Link></p>
     <p><Link href="/contactus"> Contact Us </Link></p>
     <p><a href="https://www.facebook.com/Palayampalli">Facebook</a></p>
-    <p><Link href="/admin"> Admin </Link></p>
-
   </>
 )
 const Header = () => {

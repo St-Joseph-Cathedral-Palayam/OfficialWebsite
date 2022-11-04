@@ -1,23 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react'
+import NewsCard from '../components/NewsCard';
 import { blogList } from '../config/data';
 import styles from '../styles/Updates.module.css';
 
-
-const NewsCard = ({ title, body, image }) => {
-    return (
-        <div className={styles.stjoseph_updates_cards}>
-            <h3>{title}</h3>
-            <p>{body}</p>
-            {image && (
-                <Image src={image} alt='alt' width="300" height="200" />
-            )}
-            <Link href='/'>Read more</Link>
-        </div>
-
-    )
-}
 
 const updates = () => {
   return (
@@ -25,7 +10,12 @@ const updates = () => {
     <div className={styles.stjoseph_updates_news}>
         <h2 className={styles.gradient__text}>Latest News</h2>
         <div className={styles.updatesGrid}>
+            {blogList.map(e => (e.category === 'History') && <NewsCard key={e.id} title={e.title} body={e.category} image={e.cover}/>)}
             {blogList.map(e => (e.category === 'Updates') && <NewsCard key={e.id} title={e.title} body={e.category} />)}
+        </div>
+        <h2 className={styles.gradient__text}>Unit updates</h2>
+        <div className={styles.updatesGrid}>
+            {blogList.map(e => (e.category === 'History') && <NewsCard key={e.id} title={e.title} body={e.category} image={e.cover}/>)}
             {blogList.map(e => (e.category === 'Updates') && <NewsCard key={e.id} title={e.title} body={e.category} />)}
         </div>
     </div>
