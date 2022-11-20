@@ -1,3 +1,19 @@
 .post_container{
-    padding: 0 4rem;
+    padding: 2rem 4rem;
+}
+
+.post_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_banner Image{
+    background-size: cover;
+    width: 100%;
+}
+
+.post_leftwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
