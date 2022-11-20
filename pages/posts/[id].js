@@ -4,8 +4,7 @@ import Image from 'next/image'
 import { blogList } from '../../config/data';
 
 export const getStaticPaths = async () => {
-    const paths = blogList.map(e =>  {params: {id: e.id.toString()}})
-    console.log(paths,'ss');
+    const paths = blogList.map(e => {  params: {id: e.id.toString()}})
     return {
         paths,
         fallback: false
