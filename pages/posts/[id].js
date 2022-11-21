@@ -26,12 +26,12 @@ export default function PostPage({post}) {
     return(
         <div className={styles.post_container}>
             <div className={styles.post_banner}>
+                <h1>{post.title}</h1>
+                <span>{post.category}</span>
                 <Image src={post.cover} alt="cover" width="400" height="400"/>
             </div>
             <div className={styles.post_wrapper}>
                 <div className={styles.post_middlewrapper}>
-                    <h1>{post.title}</h1>
-                    <span>{post.category}</span>
                     <p>{post.description}</p>
                 </div>
                 <div className={styles.post_rightwrapper}>

@@ -1,8 +1,9 @@
 .stjoseph_updates_container{
+    background-image: linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(0, 0, 0, 0.3)), url(https://wallpaperaccess.com/full/1688207.jpg);
     display: flex;
+    background-size: cover;
     justify-content: space-between;
     padding: 0 8rem;
-
 }
 
 .stjoseph_updates_cards{
@@ -76,6 +77,9 @@
     }
     .stjoseph_updates_news{
         margin-right: 0;
+    }
+    .stjoseph_gallery_container{
+        overflow: hidden;
     }
     
 

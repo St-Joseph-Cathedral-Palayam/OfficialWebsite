@@ -12,6 +12,13 @@
     width: 100%;
 }
 
+.post_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .post_leftwrapper{
     display: flex;
     align-items: center;

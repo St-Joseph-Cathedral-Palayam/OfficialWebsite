@@ -36,7 +36,9 @@ const Updates = () => {
                     <h2 className={styles.gradient__text}>Gallery </h2>
                     <BsFillArrowRightCircleFill className={styles.arrowButton}/>
                 </div>
-                <Gallery images={images} onClick={images}/>
+                <div className={styles.stjoseph_gallery_container}>
+                    <Gallery images={images} onClick={images}/>
+                </div>
             </div>
 
         </div>
