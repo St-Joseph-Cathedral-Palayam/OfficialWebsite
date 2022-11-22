@@ -29,7 +29,11 @@ const Updates = () => {
                         <BsFillArrowRightCircleFill className={styles.arrowButton}/>
                     </div>
                 </Link>
-                {blogList.map(e => (e.category === 'Updates') && <NewsCard key={e.id} title={e.title} body={e.category} />)}
+                {blogList.map(e => (e.category === 'Updates') &&
+                 <Link href={`/posts/${e.id}`} key={e.id}>
+                    <NewsCard title={e.title} body={e.category} />
+                 </Link>
+                 )}
             </div>
             <div className={styles.stjoseph_updates_updates}>
                 <div className={styles.stjoseph_updates_news_title}>

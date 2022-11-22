@@ -16,6 +16,7 @@
     "react-grid-gallery": "^1.0.0",
     "react-icons": "^4.6.0",
     "react-image-gallery": "^1.2.11",
+    "react-markdown": "^8.0.3",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {

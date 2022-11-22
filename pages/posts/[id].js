@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import styles from '../../styles/Posts.module.css';
 import Image from 'next/image'
 import { blogList } from '../../config/data';
+import ReactMarkdown from "react-markdown";
 
 export const getStaticPaths = async () => {
     const paths = blogList.map(e => ({ params: {id: e.id.toString()}}))
@@ -32,7 +33,10 @@ export default function PostPage({post}) {
             </div>
             <div className={styles.post_wrapper}>
                 <div className={styles.post_middlewrapper}>
-                    <p>{post.description}</p>
+                    <ReactMarkdown>
+                        {post.description}
+                    </ReactMarkdown>
+                    {/* <p>{post.description}</p> */}
                 </div>
                 <div className={styles.post_rightwrapper}>
                     <h2>{post.authorName}</h2>
