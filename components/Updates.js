@@ -30,7 +30,7 @@ const Updates = () => {
                     </div>
                 </Link>
                 {blogList.map(e => (e.category === 'Updates') &&
-                 <Link href={`/posts/${e.id}`} key={e.id}>
+                 <Link href={`/posts/${e.id}`} key={e.title}>
                     <NewsCard title={e.title} body={e.category} />
                  </Link>
                  )}
