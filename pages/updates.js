@@ -12,9 +12,7 @@ const updates = () => {
         <h2 className={styles.gradient__text}>Latest News</h2>
         <div className={styles.updatesGrid}>
             {blogList.map(e => (e.category === 'History') &&
-              <Link href={`/posts/${e.id}`} key={e.id}>
-                <NewsCard title={e.title} body={e.category} image={e.cover}/>
-              </Link> 
+                <NewsCard title={e.title} body={e.category} image={e.cover} id={e.id}/>
             )}
             {blogList.map(e => (e.category === 'Updates') && <NewsCard key={e.id} title={e.title} body={e.category} />)}
         </div>

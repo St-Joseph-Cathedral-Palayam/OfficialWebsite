@@ -90,7 +90,7 @@ export default function Home({ data }) {
       </div >
 
       {/* Blog Start */}
-      <Updates />
+      <Updates data={data}/>
 
       {/* Patron Start */}
       <div className={styles.home__possibility}>

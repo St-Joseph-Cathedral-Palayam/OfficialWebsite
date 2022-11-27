@@ -479,9 +479,13 @@
         flex-direction: column;
     }
     .stjoseph__brand_container_cards{
-
+        padding: 5rem 1rem;
         grid-template-columns: repeat(1, 1fr);
-}
+}   
+    .stjoseph__blog_container__article_image img{
+        width: 300px;
+        height: 300px;
+    }
 
     /* Customizing feature component as per needs */
     .stjoseph__brand_facilities_col .stjoseph__blog_container__article_content h3{
