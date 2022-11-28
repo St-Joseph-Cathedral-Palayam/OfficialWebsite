@@ -15,6 +15,22 @@
     display: flex;
     justify-content: space-between;
 }
+
+.stjoseph_updates_minicards{
+    width: 20rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    background-color: rgb(198, 210, 233);;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.stjoseph_updates_minicards:hover{
+    box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
+
+}
+
 .stjoseph_updates_cards:hover{
     box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
 }

@@ -28,7 +28,6 @@ export const getStaticProps = async () => {
   }
 
 const Updates = ({ data }) => {
-    console.log(data)
     return (
         <div className={styles.stjoseph_updates_container}>
             <div className={styles.stjoseph_updates_news}>
