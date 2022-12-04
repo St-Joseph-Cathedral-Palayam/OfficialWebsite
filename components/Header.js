@@ -9,7 +9,7 @@ const Menu = () => (
       <Link href="/"> Home </Link> </p>
     <p><Link href="/updates"> Updates</Link></p>
     <p><Link href="/priests"> Priests </Link></p>
-    <p><Link href="/contactus"> Contact Us </Link></p>
+    {/* <p><Link href="/contactus"> Contact Us </Link></p> */}
     <p><a href="https://www.facebook.com/Palayampalli">Facebook</a></p>
   </>
 )
@@ -40,7 +40,7 @@ const Header = () => {
               <div className={styles.stjoseph__navbar_menu_container_links}>
                 <Menu />
                 <div className={styles.stjoseph__navbar_menu_container_links_sign}>
-                  <button type="button">Querie</button>
+                  <button type="button">Queries</button>
                 </div>
               </div>
             </div>

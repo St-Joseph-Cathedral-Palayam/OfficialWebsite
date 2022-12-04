@@ -50,6 +50,34 @@
     flex: 1;
 }
 
+.paginate{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.paginate li a{
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.paginate li a:hover{
+    color: blue;
+    transition: 0.5s;
+    cursor: pointer;
+    /* padding: 8px; */
+}
+
+.activeLink{
+    color: blue;
+    background-color: white;
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+}
+
 .gradient__text{
     background: var(--gradient-text);
     background-clip: text;

@@ -1,4 +1,7 @@
 .stjoseph__navbar{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +148,13 @@
 @media screen and (max-width: 600px){
   .stjoseph__navbar{
       padding: 2rem;
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+  }
+
+  .paddingTopFixed {
+    padding-top: 140px;
   }
 
   .stjoseph__navbar_sign {

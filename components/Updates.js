@@ -21,11 +21,11 @@ const images = [
 
 export const getStaticProps = async () => {
     return {
-      props: {
-        data:  blogList.map(e => e.category === 'Updates')
-      }
+        props: {
+            data: blogList.map(e => e.category === 'Updates')
+        }
     }
-  }
+}
 
 const Updates = ({ data }) => {
     return (
@@ -38,14 +38,17 @@ const Updates = ({ data }) => {
                     </div>
                 </Link>
                 {data.map(e => (e.category === 'Updates') &&
-                      <NewsCard title={e.title} body={e.category} id={e.id} key={e.id}/>
-                    )}
+                    <NewsCard title={e.title} body={e.category} id={e.id} key={e.id} />
+                )}
             </div>
             <div className={styles.stjoseph_updates_updates}>
-                <div className={styles.stjoseph_updates_news_title}>
-                    <h2 className={styles.gradient__text}>Gallery </h2>
-                    <BsFillArrowRightCircleFill className={styles.arrowButton} />
-                </div>
+                <Link href="/gallery">
+                    <div className={styles.stjoseph_updates_news_title}>
+                        <h2 className={styles.gradient__text}>Gallery </h2>
+                        <BsFillArrowRightCircleFill className={styles.arrowButton} />
+                    </div>
+                </Link>
+
                 <div className={styles.stjoseph_gallery_container}>
                     <Gallery images={images} onClick={images} />
                 </div>

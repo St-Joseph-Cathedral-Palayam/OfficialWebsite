@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import { blogList } from '../config/data';
 import { useEffect, useRef } from 'react';
 import Updates from '../components/Updates';
+import Unit from '../components/Unit';
 
 export const getStaticProps = async () => {
   return {
@@ -177,6 +178,9 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.stjoseph__facebook_container}>
+          <Unit />
       </div>
 
 
