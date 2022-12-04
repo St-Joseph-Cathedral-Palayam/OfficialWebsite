@@ -14,7 +14,6 @@ export const getStaticProps = async () => {
   }
 
 const Blogitem = ({ blog: { id, description, title, createdAt, author, category, cover } }) => {
-    console.log(cover);
     return (
         <div className={styles.blogitem_wrap}>
             <Image src={cover} alt="cover" className={styles.blogitem_cover} width="350"

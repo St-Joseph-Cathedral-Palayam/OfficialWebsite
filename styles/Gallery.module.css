@@ -1,0 +1,26 @@
+.stjoseph__gallery_container{
+    padding: 2rem 6rem;
+} 
+
+.stjoseph__gallery_container img{
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.stjoseph__gallery_container img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.stjoseph__gallery_backbutton{
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.stjoseph__gallery_backbutton p {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}

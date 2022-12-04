@@ -28,6 +28,8 @@ export const getStaticProps = async () => {
 }
 
 const Updates = ({ data }) => {
+    const currentData = Object.values(data); 
+    currentData.slice(0, 5)
     return (
         <div className={styles.stjoseph_updates_container}>
             <div className={styles.stjoseph_updates_news}>
@@ -37,7 +39,7 @@ const Updates = ({ data }) => {
                         <BsFillArrowRightCircleFill className={styles.arrowButton} />
                     </div>
                 </Link>
-                {data.map(e => (e.category === 'Updates') &&
+                {currentData.map(e => (e.category === 'Updates') &&
                     <NewsCard title={e.title} body={e.category} id={e.id} key={e.id} />
                 )}
             </div>
@@ -50,7 +52,7 @@ const Updates = ({ data }) => {
                 </Link>
 
                 <div className={styles.stjoseph_gallery_container}>
-                    <Gallery images={images} onClick={images} />
+                    <Gallery images={images}/>
                 </div>
             </div>
 

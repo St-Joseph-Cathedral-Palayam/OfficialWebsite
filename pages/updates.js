@@ -10,19 +10,13 @@ const Updates = () => {
     const [itemoffset, setItemoffset] = useState(0);
     const itemsperpage = 6;
     const endooffset = itemoffset + itemsperpage;
-    const items = (Object.entries(blogList));
+    const items = (Object.values(blogList));
     let currentItems = items.slice(itemoffset, endooffset)
-    currentItems = currentItems.reduce((a, currentItems) => {
-        return [currentItems[1], ...a];
-    }, []);
     const pageCount = blogList.length/ itemsperpage;
 
     const handlePageClick = (event) => {
         const newOffset= (event.selected * 6) % blogList.length
         setItemoffset(newOffset)
-        console.log(event)
-        console.log(itemoffset)
-        console.log(newOffset)
     }
     return (
         <>

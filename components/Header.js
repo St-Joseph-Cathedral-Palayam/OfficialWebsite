@@ -9,13 +9,12 @@ const Menu = () => (
       <Link href="/"> Home </Link> </p>
     <p><Link href="/updates"> Updates</Link></p>
     <p><Link href="/priests"> Priests </Link></p>
-    {/* <p><Link href="/contactus"> Contact Us </Link></p> */}
+    <p><Link href="/gallery"> Gallery </Link></p>
     <p><a href="https://www.facebook.com/Palayampalli">Facebook</a></p>
   </>
 )
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
-  console.log(toggleMenu);
   return (
     <div className={styles.gradient_bg}>
       <div className={styles.stjoseph__navbar}>
