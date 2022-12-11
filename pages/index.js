@@ -7,6 +7,7 @@ import { blogList } from '../config/data';
 import { useEffect, useRef } from 'react';
 import Updates from '../components/Updates';
 import Unit from '../components/unit/Unit';
+import Head from 'next/head';
 
 export const getStaticProps = async () => {
   return {
@@ -16,26 +17,26 @@ export const getStaticProps = async () => {
   }
 }
 
-const Feature = ({title,text1,text,text2,text3})=>(
+const Feature = ({ title, text1, text, text2, text3 }) => (
   <div className={styles.church__features_container__feature}>
     <div className={styles.church__features_container__feature_title}>
-        <h1>
-          {title}
-        </h1>
-        <div />
+      <h1>
+        {title}
+      </h1>
+      <div />
     </div>
     <div className={styles.church__features_container_feature_text}>
       <p className={styles.text1}>
         {text1}
       </p>
       <p>
-      {text}
+        {text}
       </p>
       <p className={styles.text1}>
         {text2}
       </p>
       <p>
-      {text3}
+        {text3}
       </p>
     </div>
 
@@ -71,6 +72,9 @@ export default function Home({ data }) {
 
   return (
     <>
+      <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async />
+      </Head>
       {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
@@ -91,7 +95,7 @@ export default function Home({ data }) {
       </div >
 
       {/* Blog Start */}
-      <Updates data={data}/>
+      <Updates data={data} />
 
       {/* Patron Start */}
       <div className={styles.home__possibility}>
@@ -119,31 +123,31 @@ export default function Home({ data }) {
 
       {/*Mass Timings Start*/}
       <div className={styles.church__timing}>
-    <div className={styles.church__timing_heading}>
-      <h1 className={styles.gradient__text}>Mass Timings</h1>
-    </div>
-    <div className={styles.church__timing_container}>
-    <div className={styles.church__timing_contained}>
-      <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
-      
-      <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am"  text2="Weekdays" text3= "6.30 pm"  />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
-      
-      <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am"  text2="Tuesday" text3= "6.00 pm" />
-      </div>
-      <div className={styles.church__timing_contained}>
-      <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am"  />
-  
-      <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm"  text2="Saturday" text3= "5.30 pm"  />
-    </div>  
-    </div>
-  
+        <div className={styles.church__timing_heading}>
+          <h1 className={styles.gradient__text}>Mass Timings</h1>
+        </div>
+        <div className={styles.church__timing_container}>
+          <div className={styles.church__timing_contained}>
+            <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
           </div>
+          <div className={styles.church__timing_contained}>
+            <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
+
+            <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am" text2="Weekdays" text3="6.30 pm" />
+          </div>
+          <div className={styles.church__timing_contained}>
+            <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
+
+            <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am" text2="Tuesday" text3="6.00 pm" />
+          </div>
+          <div className={styles.church__timing_contained}>
+            <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am" />
+
+            <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm" text2="Saturday" text3="5.30 pm" />
+          </div>
+        </div>
+
+      </div>
 
       {/*Priests Start*/}
       <div className={styles.stjoseph__brand_container}>
@@ -152,35 +156,35 @@ export default function Home({ data }) {
         <div className={styles.stjoseph__brand_container_cards}>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/DSC00595.jpg" alt="blog" width="400" height="400"/>
+              <Image src="/assets/DSC00595.jpg" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
-                <h3>Most Rev. Dr. Thomas J Netto</h3>
-                <p>Arch Bishop</p>
+              <h3>Most Rev. Dr. Thomas J Netto</h3>
+              <p>Arch Bishop</p>
             </div>
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/011.JPG" alt="blog" width="400" height="400"/>
+              <Image src="/assets/011.JPG" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
-                <h3>Most Rev. Dr. Christudas Rajappan</h3>
-                <p>Auxiliary Bishop</p>
+              <h3>Most Rev. Dr. Christudas Rajappan</h3>
+              <p>Auxiliary Bishop</p>
             </div>
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/DSC01943.JPG" alt="blog" width="400" height="400"/>
+              <Image src="/assets/DSC01943.JPG" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
-                <h3>Very Rev. Msgr. Nicholas T</h3>
-                <p>Parish Priest</p>
+              <h3>Very Rev. Msgr. Nicholas T</h3>
+              <p>Parish Priest</p>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.stjoseph__facebook_container}>
-          <Unit />
+        <Unit />
       </div>
 
 

@@ -17,7 +17,6 @@ export const getStaticProps = async (context) => {
     const id = context.params.id;
     let data;
     blogList.map(e => (e.id == id) ? data = e : {});
-    console.log(data);
     return {
         props: { post: data }
     }
