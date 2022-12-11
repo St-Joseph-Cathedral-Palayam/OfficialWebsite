@@ -6,9 +6,9 @@
   "/priests": "pages/priests.html",
   "/units": "pages/units.html",
   "/updates": "pages/updates.html",
-  "/posts/[id]": "pages/posts/[id].js",
+  "/_document": "pages/_document.js",
   "/gallery/[id]": "pages/gallery/[id].js",
   "/": "pages/index.js",
-  "/_document": "pages/_document.js",
+  "/posts/[id]": "pages/posts/[id].js",
   "/404": "pages/404.html"
 }
