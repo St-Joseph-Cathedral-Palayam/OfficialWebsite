@@ -26,6 +26,8 @@ export const getStaticProps = async (context) => {
 export default function PostPage({ post }) {
     const router = useRouter();
     const id = router.query.id;
+    const currentData = Object.values(blogList); 
+    currentData.slice(0, 5)
     return (
         <div className={styles.post_container}>
             <div className={styles.post_wrapper}>
@@ -33,24 +35,21 @@ export default function PostPage({ post }) {
                     <div className={styles.post_banner}>
                         <h1>{post.title}</h1>
                         <div className={styles.post_tag}>{post.category}</div>
+                        <p>Authored by</p>
+                        <h3>{post.authorName}</h3>
                         <Image src={post.cover} alt="cover" width="400" height="400" />
                     </div>
                     <div className={styles.post_description}>
                         <ReactMarkdown>
                             {post.description}
                         </ReactMarkdown>
-                    </div>
-                    {/* <p>{post.description}</p> */}
-                </div>
-                <div className={styles.post_rightwrapper}>
-                    <h4>Authored by</h4>
-                    <Image src={post.authorAvatar} alt='authorAvatar' width="100" height="100" />
-                    <h2>{post.authorName}</h2>
                     <div className={styles.post_updates}>
-                        {blogList.map(e => (e.category === 'History') &&
-                            <MiniNewsCard title={e.title} body={e.category} id={e.id} />
+                        {currentData.map(e => (e.category === 'Updates') &&
+                            <MiniNewsCard title={e.title} body={e.category} id={e.id} img={e.cover} className={styles.post_updates_card}/>
                         )}
                     </div>
+                    </div>
+                    {/* <p>{post.description}</p> */}
                 </div>
             </div>
 

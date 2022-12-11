@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { Gallery } from 'react-grid-gallery';
 import Banner from '../components/Banner';
 import { imagelist } from '../config/images';
 import styles from '../styles/Gallery.module.css';

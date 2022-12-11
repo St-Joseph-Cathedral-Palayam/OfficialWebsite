@@ -16,7 +16,7 @@
 
 .page__aboutus_title{
     width: 100%;
-    background-image: linear-gradient(rgba(5, 68, 94, 0.7),rgba(24, 154, 180, 0.7)),url(/Palayam.jpg);
+    background-image: linear-gradient(rgba(5, 68, 94, 0.7),rgba(24, 154, 180, 0.7)),url(/assets/Palayam.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;

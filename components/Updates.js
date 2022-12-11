@@ -5,31 +5,14 @@ import { blogList } from '../config/data';
 import NewsCard from './NewsCard';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
-
-const images = [
-    { src: "/011.JPG", thumbnail: "/011.JPG" },
-    { src: "/DSC00595.jpg", thumbnail: "/DSC00595.jpg" },
-    { src: "/DSC00854.JPG", thumbnail: "/DSC00854.JPG" },
-    { src: "/DSC08889.JPG", thumbnail: "/DSC08889.JPG" },
-    { src: "/DSC01943.JPG", thumbnail: "/DSC01943.JPG" },
-    { src: "/DSC00886.JPG", thumbnail: "/DSC00886.JPG" },
-    { src: "/image7.jpg", thumbnail: "/image7.jpg" },
-    { src: "/image9.jpg", thumbnail: "/image9.jpg" },
-    { src: "/image8.jpg", thumbnail: "/image8.jpg" },
-    { src: "/image10.jpg", thumbnail: "/image10.jpg" },
-];
-
-export const getStaticProps = async () => {
-    return {
-        props: {
-            data: blogList.map(e => e.category === 'Updates')
-        }
-    }
-}
+import { imagelist } from '../config/images';
 
 const Updates = ({ data }) => {
+    const images = imagelist.map(e => ({
+        src: e.src
+    }));
     const currentData = Object.values(data); 
-    currentData.slice(0, 5)
+    blogList.slice(0, 5)
     return (
         <div className={styles.stjoseph_updates_container}>
             <div className={styles.stjoseph_updates_news}>

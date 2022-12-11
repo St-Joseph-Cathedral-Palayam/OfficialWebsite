@@ -300,15 +300,11 @@
     height: 600px;
 
 }
-.church__timing .section__padding1 .image_div{
-    /* position: absolute; */
-    /* background-image: url('../../assets/DSC00595.jpg'); */
-}
 .church__timing {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(5, 6, 7, 0.8)),url(/Palayam.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(5, 6, 7, 0.8)),url(/assets/Palayam.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

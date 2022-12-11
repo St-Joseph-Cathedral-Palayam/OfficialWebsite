@@ -33,7 +33,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Parish Priest',
     authorAvatar: '/DSC01943.JPG',
     createdAt: 'June 03, 2021',
-    cover: '/image6.jpg', 
+    cover: '/assets/image6.jpg', 
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Secretary',
     authorAvatar: '/assets/images/author.jpg',
     createdAt: 'June 03, 2021',
-    cover: '/assets/Easter Updates.jpg',
+    cover: '/assets/assets/Easter Updates.jpg',
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Parish Priest',
     authorAvatar:  '/DSC01943.JPG',
     createdAt: 'June 03, 2021',
-    cover: '/catechism.jpg',
+    cover: '/assets/catechism.jpg',
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Parish Priest',
     authorAvatar:  '/DSC01943.JPG',
     createdAt: 'June 03, 2021',
-    cover: '/oldchurch.jpg',
+    cover: '/assets/oldchurch.jpg',
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Parish Priest',
     authorAvatar: '/images/author.jpg',
     createdAt: 'June 03, 2021',
-    cover: '/bible.jpg',
+    cover: '/assets/bible.jpg',
   },
   {
     id: 6,
@@ -88,12 +88,12 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     category: 'History',
     subCategory: ['History', 'StJoseph', 'Patron Saint'],
     description:
-      "Everything we know about the husband of Mary and the foster father of Jesus comes from Scripture and that has seemed too little for those who made up legends about him. We know he was a carpenter, a working man, for the skeptical Nazarenes ask about Jesus, Is this not the carpenter's son? (Matthew 13:55). He wasn't rich for when he took Jesus to the Temple to be circumcised and Mary to be purified he offered the sacrifice of two turtledoves or a pair of pigeons, allowed only for those who could not afford a lamb (Luke 2:24). Despite his humble work and means, Joseph came from a royal lineage. Luke and Matthew disagree some about the details of Joseph's genealogy but they both mark his descent from David, the greatest king of Israel (Matthew 1:1-16 and Luke 3:23-38). Indeed the angel who first tells Joseph about Jesus greets him as son of David, a royal title used also for Jesus. We know Joseph was a compassionate, caring man. When he discovered Mary was pregnant after they had been betrothed, he knew the child was not his but was as yet unaware that she was carrying the Son of God. He planned to divorce Mary according to the law but he was concerned for her suffering and safety. He knew that women accused to adultery could be stoned to death, so he decided to divorce her quietly and not expose her to shame or cruelty (Matthew 1:19-25). We know Joseph was man of faith, obedient to whatever Godasked of him without knowing the outcome. When the angelcame to Joseph in a dream and told him the truth about the child Mary was carrying, Joseph immediately and without question or concern for gossip, took Mary as his wife. When the angel came again to tell him that his family was in danger, he immediately left everything he owned, all his family and friends, and fled to a strange country with his young wife and the baby. He waited in Egypt without question until the angel told him it was safe to go back (Matthew 2:13- 23). We know Joseph loved Jesus. His one concern was for the safety of this child entrusted to him. Not only did he leave his home to protect Jesus, but upon his return settled in the obscure town of Nazareth out of fear for his life. When Jesus stayed in the Temple we are told Joseph (along with Mary) searched with great anxiety for three days for him (Luke 2:48). We also know that Joseph treated Jesus as his own son for over and over the people of Nazareth say of Jesus, Is this not the son of Joseph? (Luke 4:22) We know Joseph respected God. He followed God's commands in handling the situation with Mary and going to Jerusalem to have Jesus circumcised and Mary purified after Jesus' birth. We are told that he took his family to Jerusalem every year for Passover, something that could not have been easy for a working man. Since Joseph does not appear in Jesus' public life, at his death, or resurrection, many historians believeJoseph probably had died before Jesus entered public ministry. Joseph is the patron of the dying because, assuming he died before Jesus' public life, he died with Jesusand Mary close to him, the way we all would like to leave this earth. Joseph is also patron of the universal Church, fathers, carpenters, and social justice. We celebrate two feast days for Joseph: March 19 for Joseph the Husband of Mary and May 1 for Joseph the Worker. There is much we wish we could know about Joseph -- where and when he was born, how he spent his days, when and how he died. But Scripture has left us with the most important knowledge: who he was -- a righteous man (Matthew 1:18). In His Footsteps: Joseph was foster father to Jesus. There are many children separated from families and parents who need foster parents. Please consider contacting your local Catholic Charities or Division of FamilyServices about becoming a foster parent. Saint Joseph, patron of the universal Church, watch over the Church as carefully as you watched over Jesus, help protect it and guide it as you did with your adopted son. Amen Prayer to St. Joseph Oh, St. Joseph, whose protection is so great, so strong, so prompt before the throne of God. I place in you all my interests and desires. Oh, St. Joseph, do assist me by your powerful intercession, and obtain for me from your divine Son all spiritual blessings, through Jesus Christ, our Lord. So that, having engaged here below your heavenly power, I may offer my thanksgiving and homage to the most loving of Fathers. Oh, St. Joseph, I never weary of contemplating you, and Jesus asleep in your arms; I dare not approach while He reposes near your heart. Press Him in my name and kiss His fine head for me and ask him to return the Kiss when I draw my dying breath. St. Joseph, Patron of departing souls - Pray for me. This prayer was found in the fiftienth year of Our Lord and Savior Jesus Christ. In 1505 it was sent from the Pope to Emperor Charles when he was going into battle. Whoever shall read this prayer or hear it or keep it about themselves, shall never die a sudden death, or be drowned, not shall posion take effect of them; neither shall they fall into the hands of the enemy; or shall be burned in any fire, or shall be overpowered in battle. Say for nine mornings for anything you may desire. It has never been known to fail, so be sure you really want what you ask .",
+      "Everything we know about the husband of Mary and the foster father of Jesus comes from Scripture and that has seemed too little for those who made up legends about him. We know he was a carpenter, a working man, for the skeptical Nazarenes ask about Jesus, Is this not the carpenter's son? (Matthew 13:55). He wasn't rich for when he took Jesus to the Temple to be circumcised and Mary to be purified he offered the sacrifice of two turtledoves or a pair of pigeons, allowed only for those who could not afford a lamb (Luke 2:24). Despite his humble work and means, Joseph came from a royal lineage. Luke and Matthew disagree some about the details of Joseph's genealogy but they both mark his descent from David, the greatest king of Israel (Matthew 1:1-16 and Luke 3:23-38). Indeed the angel who first tells Joseph about Jesus greets him as son of David, a royal title used also for Jesus. We know Joseph was a compassionate, caring man. When he discovered M/assetsary was pregnant after they had been betrothed, he knew the child was not his but was as yet unaware that she was carrying the Son of God. He planned to divorce Mary according to the law but he was concerned for her suffering and safety. He knew that women accused to adultery could be stoned to death, so he decided to divorce her quietly and not expose her to shame or cruelty (Matthew 1:19-25). We know Joseph was man of faith, obedient to whatever Godasked of him without knowing the outcome. When the angelcame to Joseph in a dream and told him the truth about the child Mary was carrying, Joseph immediately and without question or concern for gossip, took Mary as his wife. When the angel came again to tell him that his family was in danger, he immediately left everything he owned, all his family and friends, and fled to a strange country with his young wife and the baby. He waited in Egypt without question until the angel told him it was safe to go back (Matthew 2:13- 23). We know Joseph loved Jesus. His one concern was for the safety of this child entrusted to him. Not only did he leave his home to protect Jesus, but upon his return settled in the obscure town of Nazareth out of fear for his life. When Jesus stayed in the Temple we are told Joseph (along with Mary) searched with great anxiety for three days for him (Luke 2:48). We also know that Joseph treated Jesus as his own son for over and over the people of Nazareth say of Jesus, Is this not the son of Joseph? (Luke 4:22) We know Joseph respected God. He followed God's commands in handling the situation with Mary and going to Jerusalem to have Jesus circumcised and Mary purified after Jesus' birth. We are told that he took his family to Jerusalem every year for Passover, something that could not have been easy for a working man. Since Joseph does not appear in Jesus' public life, at his death, or resurrection, many historians believeJoseph probably had died before Jesus entered public ministry. Joseph is the patron of the dying because, assuming he died before Jesus' public life, he died with Jesusand Mary close to him, the way we all would like to leave this earth. Joseph is also patron of the universal Church, fathers, carpenters, and social justice. We celebrate two feast days for Joseph: March 19 for Joseph the Husband of Mary and May 1 for Joseph the Worker. There is much we wish we could know about Joseph -- where and when he was born, how he spent his days, when and how he died. But Scripture has left us with the most important knowledge: who he was -- a righteous man (Matthew 1:18). In His Footsteps: Joseph was foster father to Jesus. There are many children separated from families and parents who need foster parents. Please consider contacting your local Catholic Charities or Division of FamilyServices about becoming a foster parent. Saint Joseph, patron of the universal Church, watch over the Church as carefully as you watched over Jesus, help protect it and guide it as you did with your adopted son. Amen Prayer to St. Joseph Oh, St. Joseph, whose protection is so great, so strong, so prompt before the throne of God. I place in you all my interests and desires. Oh, St. Joseph, do assist me by your powerful intercession, and obtain for me from your divine Son all spiritual blessings, through Jesus Christ, our Lord. So that, having engaged here below your heavenly power, I may offer my thanksgiving and homage to the most loving of Fathers. Oh, St. Joseph, I never weary of contemplating you, and Jesus asleep in your arms; I dare not approach while He reposes near your heart. Press Him in my name and kiss His fine head for me and ask him to return the Kiss when I draw my dying breath. St. Joseph, Patron of departing souls - Pray for me. This prayer was found in the fiftienth year of Our Lord and Savior Jesus Christ. In 1505 it was sent from the Pope to Emperor Charles when he was going into battle. Whoever shall read this prayer or hear it or keep it about themselves, shall never die a sudden death, or be drowned, not shall posion take effect of them; neither shall they fall into the hands of the enemy; or shall be burned in any fire, or shall be overpowered in battle. Say for nine mornings for anything you may desire. It has never been known to fail, so be sure you really want what you ask .",
     authorName: 'Parish Priest',
     authorAvatar: '/images/author.jpg',
     createdAt: 'June 03, 2021',
     cover:
-    '/st joseph.jpg',
+    '/assets/st_joseph.jpg',
   },
   {
     id: 7,
@@ -105,7 +105,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'Secretary',
     authorAvatar: '/assets/images/author.jpg',
     createdAt: 'June 03, 2021',
-    cover: '/image9.jpeg',
+    cover: '/assets/image9.jpeg',
   },
 {
     id: 8,
@@ -117,7 +117,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
     authorName: 'John Doe',
     authorAvatar: '/images/author.jpg',
     createdAt: 'June 03, 2021',
-    cover: '/image14.jpg',
+    cover: '/assets/image14.jpg',
   },
   {
     id: 9,
@@ -129,7 +129,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
       authorName: 'Parish Priest',
       authorAvatar:  '/DSC01943.JPG',
       createdAt: 'March 15, 2022',
-    cover: '/update6.jpg',
+    cover: '/assets/update6.jpg',
   },
   {
     id: 10,
@@ -141,7 +141,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
       authorName: 'Parish Priest',
       authorAvatar:  '/DSC01943.JPG',
       createdAt: 'March 19, 2022',
-    cover: '/update4.jpg',
+    cover: '/assets/update4.jpg',
   },
   {
     id: 11,
@@ -153,7 +153,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
       authorName: 'Parish Priest',
       authorAvatar:  '/DSC01943.JPG',
       createdAt: 'March 19, 2022',
-    cover: '/update3.jpg',
+    cover: '/assets/update3.jpg',
   },
   {
     id: 12,
@@ -165,7 +165,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
       authorName: 'Parish Priest',
       authorAvatar:  '/DSC01943.JPG',
       createdAt: 'March 20, 2022',
-    cover: '/update2.jpg',
+    cover: '/assets/update2.jpg',
   },
   {
     id: 13,
@@ -177,7 +177,7 @@ A three tier system - Diocese, Vicariate, Parish was introduced. The Basic Chris
       authorName: 'Parish Priest',
       authorAvatar:  '/DSC01943.JPG',
       createdAt: 'March 20, 2022',
-    cover: '/update1.jpg',
+    cover: '/assets/update1.jpg',
   },
   
 ];

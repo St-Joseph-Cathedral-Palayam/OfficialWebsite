@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { blogList } from '../config/data';
 import { useEffect, useRef } from 'react';
 import Updates from '../components/Updates';
-import Unit from '../components/Unit';
+import Unit from '../components/unit/Unit';
 
 export const getStaticProps = async () => {
   return {
@@ -84,7 +84,7 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className={styles.stjoseph__header_image}>
-          <Image src="/churchp.png" alt="Picture of the author"
+          <Image src="/assets/churchp.png" alt="Picture of the author"
             width="1750"
             height="1700" />
         </div>
@@ -96,7 +96,7 @@ export default function Home({ data }) {
       {/* Patron Start */}
       <div className={styles.home__possibility}>
         <div className={styles.home__possibility_image}>
-          <Image className={styles.home__possibility_image_tag} src="/stjoseph.jpg" alt="joseph" width="650" height="600" />
+          <Image className={styles.home__possibility_image_tag} src="/assets/stjoseph.jpg" alt="joseph" width="650" height="600" />
         </div>
         <div className={styles.home__possibility_content}>
           <h4>
@@ -152,7 +152,7 @@ export default function Home({ data }) {
         <div className={styles.stjoseph__brand_container_cards}>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/DSC00595.jpg" alt="blog" width="400" height="400"/>
+              <Image src="/assets/DSC00595.jpg" alt="blog" width="400" height="400"/>
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
                 <h3>Most Rev. Dr. Thomas J Netto</h3>
@@ -161,7 +161,7 @@ export default function Home({ data }) {
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/011.JPG" alt="blog" width="400" height="400"/>
+              <Image src="/assets/011.JPG" alt="blog" width="400" height="400"/>
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
                 <h3>Most Rev. Dr. Christudas Rajappan</h3>
@@ -170,7 +170,7 @@ export default function Home({ data }) {
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/DSC01943.JPG" alt="blog" width="400" height="400"/>
+              <Image src="/assets/DSC01943.JPG" alt="blog" width="400" height="400"/>
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
                 <h3>Very Rev. Msgr. Nicholas T</h3>
