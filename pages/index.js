@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Typed from 'typed.js';
-import Bloglist from '../components/bloglist/Bloglist';
 import styles from '../styles/Home.module.css'
-import { blogList } from '../config/data';
+import blogList  from '../config/posts.json';
 import { useEffect, useRef } from 'react';
 import Updates from '../components/Updates';
 import Unit from '../components/unit/Unit';

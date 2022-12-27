@@ -1,7 +1,7 @@
 import React from 'react'
 import UnitCard from './UnitCard'
 import styles from '../../styles/Unit.module.css';
-import { unitList } from '../../config/unit';
+import  unitList  from '../../config/bulletin.json';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
 

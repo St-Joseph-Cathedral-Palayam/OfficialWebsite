@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ReactPaginate from 'react-paginate';
 import Banner from '../components/Banner';
 import NewsCard from '../components/NewsCard';
-import { blogList } from '../config/data';
+import  blogList  from '../config/posts.json';
 import styles from '../styles/Updates.module.css';
 
 const Updates = () => {

@@ -114,7 +114,6 @@
 }
 
 .unitList_wrapper{
-    padding: 1rem 5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3rem;

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import styles from '../../styles/Posts.module.css';
 import Image from 'next/image'
-import { blogList } from '../../config/data';
+import  blogList from '../../config/posts.json';
 import ReactMarkdown from "react-markdown";
 import { MiniNewsCard } from "../../components/NewsCard";
 
@@ -36,8 +36,10 @@ export default function PostPage({ post }) {
                         <div className={styles.post_tag}>{post.category}</div>
                         <p>Authored by</p>
                         <h3>{post.authorName}</h3>
-                        <Image src={post.cover} alt="cover" width="400" height="400" />
-                    </div>
+                        {
+                            post.cover && (<Image src={post.cover} alt="cover" width="400" height="400" />)
+                        }
+                        </div>
                     <div className={styles.post_description}>
                         <ReactMarkdown>
                             {post.description}
