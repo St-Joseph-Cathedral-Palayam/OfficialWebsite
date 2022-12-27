@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from '../styles/Update.module.css';
 import { Gallery } from "react-grid-gallery";
-import { blogList } from '../config/data';
+import blogList from '../config/posts.json';
 import NewsCard from './NewsCard';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
-import { imagelist } from '../config/images';
+import  imagelist  from '../config/gallery.json';
 
 const Updates = ({ data }) => {
     const images = imagelist.map(e => ({
-        src: e.src
+        src: e.images[0]
     }));
     const currentData = Object.values(data); 
     blogList.slice(0, 5)

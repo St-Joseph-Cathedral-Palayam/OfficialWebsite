@@ -3,8 +3,10 @@ const fs = require("fs")
 
 const dirPath = path.join(__dirname, "../posts")
 const bulPath = path.join(__dirname, "../bulletin")
+const galPath = path.join(__dirname, "../gallery")
 let postlist = []
 let bulletinList = []
+let galleryList = []
 
 const months = {
     "01": "January",
@@ -144,8 +146,8 @@ const getBulletin = () => {
                 const timestamp = Math.random().toString(16).slice(2)
                 post = {
                     id: timestamp,
-                    title: metadata.title ? metadata.title : "No title given",
-                    thumbnail: metadata.thumbnail,
+                    month: metadata.month ? metadata.month : "No title given",
+                    img: `/${metadata.img}`,
                     file: metadata.file ? metadata.file : "No content given",
                 }
                 bulletinList.push(post)
@@ -163,7 +165,59 @@ const getBulletin = () => {
     return
 }
 
+const getGallery = () => {
+    fs.readdir(galPath, (err, files) => {
+        if (err) {
+            return log.fatal("Failed to list contents of directory: " + err)
+        }
+        let ilist = []
+        files.forEach((file, i) => {
+            let obj = {}
+            let post
+            fs.readFile(`${galPath}/${file}`, "utf8", (err, contents) => {
+                const getMetadataIndices = (acc, elem, i) => {
+                    if (/^---/.test(elem)) {
+                        acc.push(i)
+                    }
+                    return acc
+                }
+                const parseMetadata = ({ lines, metadataIndices }) => {
+                    if (metadataIndices.length > 0) {
+                        let metadata = lines.slice(metadataIndices[0] + 1, metadataIndices[1])
+                        metadata.forEach(line => {
+                            obj[line.split(": ")[0]] = line.split(": ")[1]
+                        })
+                        return obj
+                    }
+                }
+                const lines = contents.split("\n")
+                const metadataIndices = lines.reduce(getMetadataIndices, [])
+                const metadata = parseMetadata({ lines, metadataIndices })
+                let photos = Object.keys(metadata)
+                photos = photos.splice(photos.indexOf('Images:')+1).map(e => e.replace('  - ', '/'))
+                const random = Math.random().toString(16).slice(2)
+                post = {
+                    id: random,
+                    title: metadata.title ? metadata.title : "No title given",
+                    images: photos ? photos : "No content given",
+                }
+                galleryList.push(post)
+                ilist.push(i)
+                if (ilist.length === files.length) {
+                    const sortedList = galleryList.sort((a, b) => {
+                        return a.id < b.id ? 1 : -1
+                    })
+                    let data = JSON.stringify(sortedList)
+                    fs.writeFileSync("config/gallery.json", data)
+                }
+            })
+        })
+    })
+    return
+}
+
 
 
 getPosts()
 getBulletin()
+getGallery()

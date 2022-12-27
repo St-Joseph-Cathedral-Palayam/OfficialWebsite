@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import Banner from '../../components/Banner';
-import { imagelist } from '../../config/images'
+import imagelist from '../../config/gallery.json'
 import styles from '../../styles/Gallery.module.css';
 
 export const getStaticPaths = async () => {
