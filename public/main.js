@@ -92,7 +92,7 @@ const getPosts = () => {
                         return a.id < b.id ? 1 : -1
                     })
                     let data = JSON.stringify(sortedList)
-                    fs.writeFileSync("src/posts.json", data)
+                    fs.writeFileSync("config/posts.json", data)
                 }
             })
         })
