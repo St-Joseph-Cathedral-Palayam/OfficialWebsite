@@ -9,6 +9,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    position: relative;
     flex-direction: column;
 }
 .stjoseph__header_content h1{

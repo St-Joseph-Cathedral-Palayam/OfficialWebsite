@@ -38,3 +38,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "title", name: "title", widget: "string"}
       - {label: "Gallery", name: "Images", widget: "list", field: {label: Image, name: image, widget: image}}
+
+  - name: "popup" # Used in routes, e.g., /admin/collections/blog
+    label: "PopUp" # Used in the UI
+    folder: "popup" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Image", name: "cover", widget: "image", required: false}

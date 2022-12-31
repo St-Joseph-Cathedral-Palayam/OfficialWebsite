@@ -127,6 +127,42 @@
   display: none;
 }
 
+.popup{
+  position: absolute;
+  width: 84vw;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  left: 0;
+  right: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.popupclose{
+  position: absolute;
+  left: 50;
+  cursor: pointer;
+}
+
+.popupclose{
+  background-color: rgb(255, 156, 8);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+}
+
+.innnerpop{
+  max-width: 650px;
+  position: relative;
+  padding: 32px;
+}
+
 @media screen and (max-width: 1050px) {
   .stjoseph__navbar{
       position: relative;
@@ -143,6 +179,11 @@
 @media screen and (max-width: 700px){
   .stjoseph__navbar{
       padding: 2rem 4rem;
+  }
+  .popup img{
+    margin-top: 300px;
+    width: 64vw;
+    height: 500px;
   }
 }
 @media screen and (max-width: 600px){

@@ -1,0 +1,29 @@
+.contact_wrapper{
+    width: 85vw;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_card{
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    width: 15vw;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .contact_wrapper{
+        flex-direction: column;
+    }
+    .contact_card{
+        width: 80vw;
+        margin-bottom: 3rem;
+    }
+
+}

@@ -2,11 +2,14 @@
 import Image from 'next/image'
 import Typed from 'typed.js';
 import styles from '../styles/Home.module.css'
-import blogList  from '../config/posts.json';
-import { useEffect, useRef } from 'react';
+import blogList from '../config/posts.json';
+import popup from '../config/popup.json';
+import { useEffect, useRef, useState } from 'react';
 import Updates from '../components/Updates';
 import Unit from '../components/unit/Unit';
 import Head from 'next/head';
+import Popup from '../components/Popup';
+import { Contact } from '../components/Contact';
 
 export const getStaticProps = async () => {
   return {
@@ -43,10 +46,9 @@ const Feature = ({ title, text1, text, text2, text3 }) => (
 )
 
 export default function Home({ data }) {
-
   const el = useRef(null);
   const typed = useRef(null);
-
+  const [trigger, setTrigger] = useState(false)
   useEffect(() => {
     const options = {
       strings: [
@@ -69,6 +71,12 @@ export default function Home({ data }) {
 
   }, [])
 
+  useEffect(() => {
+    setTimeout(() => {
+      setTrigger(true)
+    }, 2000);
+  }, [])
+
   return (
     <>
       <Head>
@@ -77,6 +85,13 @@ export default function Home({ data }) {
       {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
+        {popup.image &&
+        (
+          <Popup trigger={trigger} setTrigger={setTrigger}>
+            <Image src={popup.image} alt='popup image' width='400' height='800'/>
+          </Popup>
+        )
+      }
           <h1 className={styles.gradient__text} ref={el} />
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
             St. Joseph’s Cathedral located at Palayam is an ancient church in India where believers from far and
@@ -185,9 +200,10 @@ export default function Home({ data }) {
       <div className={styles.stjoseph__facebook_container}>
         <Unit />
       </div>
-
-
-
+      <div className={styles.stjoseph__brand_container}>
+        <h1 className={styles.gradient__text} style={{textAlign: 'center'}}> "Contact Us" </h1>
+        <Contact />
+      </div>
     </>
   )
 }

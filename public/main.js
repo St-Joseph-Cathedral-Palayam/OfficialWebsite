@@ -4,9 +4,11 @@ const fs = require("fs")
 const dirPath = path.join(__dirname, "../posts")
 const bulPath = path.join(__dirname, "../bulletin")
 const galPath = path.join(__dirname, "../gallery")
+const popPath = path.join(__dirname, "../popup")
 let postlist = []
 let bulletinList = []
 let galleryList = []
+let popUp = []
 
 const months = {
     "01": "January",
@@ -216,8 +218,50 @@ const getGallery = () => {
     return
 }
 
+const getPopUp = () => {
+    fs.readdir(popPath, (err, files) => {
+        if (err) {
+            return log.fatal("Failed to list contents of directory: " + err)
+        }
+        let ilist = []
+        files.forEach((file, i) => {
+            let obj = {}
+            let post
+            fs.readFile(`${popPath}/${file}`, "utf8", (err, contents) => {
+                const getMetadataIndices = (acc, elem, i) => {
+                    if (/^---/.test(elem)) {
+                        acc.push(i)
+                    }
+                    return acc
+                }
+                const parseMetadata = ({ lines, metadataIndices }) => {
+                    if (metadataIndices.length > 0) {
+                        let metadata = lines.slice(metadataIndices[0] + 1, metadataIndices[1])
+                        metadata.forEach(line => {
+                            obj[line.split(": ")[0]] = line.split(": ")[1]
+                        })
+                        return obj
+                    }
+                }
+                const lines = contents.split("\n")
+                const metadataIndices = lines.reduce(getMetadataIndices, [])
+                const metadata = parseMetadata({ lines, metadataIndices })
+                const random = Math.random().toString(16).slice(2)
+                post = {
+                    id: random,
+                    image: metadata.cover ? metadata.cover : "No content given",
+                }
+                const data = JSON.stringify(post)
+                fs.writeFileSync("config/popup.json", data);
+            })
+        })
+    })
+    return
+}
 
 
-getPosts()
+
+// getPosts()
 getBulletin()
 getGallery()
+getPopUp()
