@@ -249,7 +249,7 @@ const getPopUp = () => {
                 const random = Math.random().toString(16).slice(2)
                 post = {
                     id: random,
-                    image: metadata.cover ? metadata.cover : "No content given",
+                    image: metadata.cover ? `/${metadata.cover}` : "No content given",
                 }
                 const data = JSON.stringify(post)
                 fs.writeFileSync("config/popup.json", data);
