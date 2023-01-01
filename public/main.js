@@ -261,7 +261,7 @@ const getPopUp = () => {
 
 
 
-// getPosts()
+getPosts()
 getBulletin()
 getGallery()
 getPopUp()
