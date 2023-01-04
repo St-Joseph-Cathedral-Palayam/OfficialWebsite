@@ -87,7 +87,7 @@ const getPosts = () => {
                     author: metadata.author ? metadata.author : "No author given",
                     date: metadata.date ? metadata.date : "No date given",
                     cover: metadata.cover ? `/${metadata.cover}` : "No date given",
-                    content: metadata.content ? metadata.content : "No content given",
+                    description: metadata.description ? metadata.description : "No content given",
                 }
                 postlist.push(post)
                 ilist.push(i)
@@ -219,6 +219,9 @@ const getGallery = () => {
 const getPopUp = () => {
     fs.readdir(popPath, (err, files) => {
         if (err) {
+            post = {}
+            const data = JSON.stringify(post)
+            fs.writeFileSync("config/popup.json", data);
             return;
         }
         let ilist = []
