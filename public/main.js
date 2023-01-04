@@ -86,9 +86,7 @@ const getPosts = () => {
                     category: metadata.category ? metadata.category : "No category given",
                     author: metadata.author ? metadata.author : "No author given",
                     date: metadata.date ? metadata.date : "No date given",
-                    // authorName: authorName ? authorName : "No date given",
-                    // time: parsedDate["time"],
-                    thumbnail: metadata.thumbnail,
+                    cover: metadata.cover ? `/${metadata.cover}` : "No date given",
                     content: metadata.content ? metadata.content : "No content given",
                 }
                 postlist.push(post)
