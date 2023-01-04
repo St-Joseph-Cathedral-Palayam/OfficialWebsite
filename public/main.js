@@ -221,7 +221,7 @@ const getGallery = () => {
 const getPopUp = () => {
     fs.readdir(popPath, (err, files) => {
         if (err) {
-            return log.fatal("Failed to list contents of directory: " + err)
+            return;
         }
         let ilist = []
         files.forEach((file, i) => {
