@@ -1,5 +1,5 @@
 ---
-month: test 123
+month: May
 title: May
 img: public/assets/images/screenshot-from-2023-01-04-05-51-11.png
 file: public/assets/images/palayam-final.pdf
