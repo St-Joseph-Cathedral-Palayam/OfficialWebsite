@@ -6,7 +6,7 @@ import styles from '../styles/Updates.module.css';
 const NewsCard = ({ title, body, image, id}) => {
     return (
         <div className={styles.stjoseph_updates_cards}>
-            <div className={styles.stjoseph_updates_title}>
+            <div className={styles.stjoseph_updates_title} style={{color: 'black'}}>
                 <h3>{title}</h3>
                 <p>{body}</p>
                 <Link href={`/posts/${id}`}>

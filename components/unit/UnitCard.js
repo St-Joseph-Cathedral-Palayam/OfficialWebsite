@@ -4,11 +4,11 @@ import styles from '../../styles/Unit.module.css';
 
 const UnitCard = ({ month, img, file }) => {
   return (
-    <div class={styles.container}>
+    <div className={styles.container}>
       <Image src={img} alt="" width="250" height="300"/>
-      <p class={styles.title}>{month}</p>
-      <div class={styles.overlay}></div>
-      <div class={styles.button}><a href={file}> View </a></div>
+      <p className={styles.title}>{month}</p>
+      <div className={styles.overlay}></div>
+      <div className={styles.button}><a href={file}> View </a></div>
     </div>
   )
 }

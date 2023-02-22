@@ -1,1 +1,20 @@
-[{"id":946665000,"title":"New Year Mass TImings","category":"Updates","author":"No author given","date":"No date given","cover":"/public/assets/images/contact.png","description":"N﻿ew Year Mass"}]
+[
+    {
+        "id": 946665000,
+        "title": "\"വിശുദ്ധ സെബസ്ത്യാനോസ് തിരുനാൾ \"",
+        "category": "Updates",
+        "author": "No author given",
+        "date": "No date given",
+        "cover": "/public/assets/images/seb-copy-fin.jpg",
+        "description": "വിശുദ്ധ സെബസ്ത്യാനോസ് തിരുനാൾ"
+    },
+    {
+        "id": 946665001,
+        "title": "New Year Mass TImings",
+        "category": "Updates",
+        "author": "No author given",
+        "date": "No date given",
+        "cover": "/public/assets/images/contact.png",
+        "description": "N﻿ew Year Mass"
+    }
+]

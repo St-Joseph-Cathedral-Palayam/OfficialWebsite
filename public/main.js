@@ -78,7 +78,7 @@ const getPosts = () => {
                 const parsedDate = metadata.date ? formatDate(metadata.date) : new Date()
                 const publishedDate = `${parsedDate["monthName"]} ${parsedDate["day"]}, ${parsedDate["year"]}`
                 const datestring = `${parsedDate["year"]}-${parsedDate["month"]}-${parsedDate["day"]}T${parsedDate["time"]}:00`
-                const date = new Date(datestring)
+                const date = new Date(metadata,createdAt)
                 const timestamp = date.getTime() / 1000
                 post = {
                     id: timestamp,
