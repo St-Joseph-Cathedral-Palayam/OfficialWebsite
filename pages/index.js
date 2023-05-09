@@ -88,11 +88,21 @@ export default function Home({ data }) {
         {popup.image &&
         (
           <Popup trigger={trigger} setTrigger={setTrigger}>
-            <Image src={popup.image} alt='popup image' width='400' height='800'/>
+            <Image src={popup.image} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup>
         )
       }
           <h1 className={styles.gradient__text} ref={el} />
+          <label htmlFor="my-modal-4" className="btn text-lg text-gray-50">open modal</label>
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal-4" className="modal-toggle" />
+<label htmlFor="my-modal-4" className="modal cursor-pointer">
+  <label className="modal-box relative" htmlFor="">
+    <h3 className="text-lg font-bold">Congratulations random Internet user!</h3>
+    <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </label>
+</label>
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
             St. Joseph’s Cathedral located at Palayam is an ancient church in India where believers from far and
             wide flock to receive heavenly blessings.
