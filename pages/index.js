@@ -88,7 +88,7 @@ export default function Home({ data }) {
         {popup.image &&
         (
           <Popup trigger={trigger} setTrigger={setTrigger}>
-            <Image src={popup.image} alt='popup image' width='400' height='800'/>
+            <Image src={popup.image} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup>
         )
       }
