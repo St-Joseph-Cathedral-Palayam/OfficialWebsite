@@ -9,6 +9,11 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
+.stjoseph__brand_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card_container{
     display: flex;
     flex-direction: column;
@@ -180,9 +185,15 @@
     .title{
       left: 20px;
     }
+    .gradient__text{
+      font-size: 0.2rem;
+    }
     .button{
       opacity: 1;
       left: 20px;
       bottom: 40px;
+    }
+    .stjoseph__brand_title{
+      font-size: 0.2rem;
     }
 }
