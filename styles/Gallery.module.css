@@ -24,3 +24,47 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.stjoseph__gallery_container_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginate{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.paginate li a{
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.paginate li a:hover{
+    color: blue;
+    transition: 0.5s;
+    cursor: pointer;
+    /* padding: 8px; */
+}
+
+@media screen and (max-width: 600px){
+    .stjoseph__gallery_container{
+        padding: 1rem;
+    } 
+    .stjoseph__gallery_container img{
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 5%;
+    }
+    .stjoseph__gallery_container_images{
+        flex-direction: column;
+        width: 100%;
+    }
+    .stjoseph__gallery_container_images img{
+        width: 100%;
+    }
+}
