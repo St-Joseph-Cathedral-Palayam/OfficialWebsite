@@ -45,6 +45,7 @@
 .gradient__text{
     background: var(--gradient-text);
     background-clip: text;
+    font-weight: 600;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -76,6 +77,7 @@
 }
 .home__possibility_image_tag{
     border-radius: 2%;
+    height: 600px;
 }
 .home__possibility_content{
     flex: 1;
@@ -386,6 +388,9 @@
     display: flex;
     flex-direction: column;
 }
+.stjoseph__blog_container__article_image img{
+    height: 400px;
+}
 
 @media screen and (max-width: 850px) {
     .church__timing_heading {
@@ -438,6 +443,19 @@
         font-size: 18px;
     
     }
+    .stjoseph__brand_container{
+        padding: 0
+    }
+
+    .stjoseph__header_content{
+        padding-top: 2rem;
+    }
+
+.stjoseph__facebook_container h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 350px) {

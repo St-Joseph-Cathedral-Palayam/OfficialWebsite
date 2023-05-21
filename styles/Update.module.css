@@ -4,6 +4,7 @@
     background-size: cover;
     justify-content: space-between;
     padding: 0 8rem;
+    padding-top: 1rem;
 }
 
 .stjoseph_updates_cards{
@@ -20,6 +21,8 @@
 
 .stjoseph_updates_updates{
     flex: 1;
+    font-family: var(--font-family);
+    font-weight: 600;
 }
 
 .stjoseph_updates_news{
@@ -34,9 +37,12 @@
 }
 
 .gradient__text{
+    font-family: var(--font-family);
+    font-weight: 600;
     background: var(--gradient-text);
     background-clip: text;
     margin-right: 10px;
+    font-size: 32px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -45,6 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0.5rem;
 }
 
 .arrowButton{

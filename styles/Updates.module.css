@@ -16,6 +16,11 @@
     justify-content: space-between;
 }
 
+.stjoseph_updates_image{
+    height: 200px;
+    width: 300px;
+}
+
 .stjoseph_updates_minicards{
     width: 20rem;
     margin: 1rem 1rem;
