@@ -140,8 +140,13 @@ export const priestslist = [
     period: "2015-2018"
    },
    {
-    id: 28,
-    name: "Very Rev. Msgr. Nicholas T",
-    period: " 2018-"
+   id: 28,
+   name: "Very Rev. Msgr. Nicholas T",
+   period: " 2018-2023"
+  },  
+   {
+    id: 29,
+    name: "Very Rev.Msgr. Wilfred E",
+    period: " 2023-"
    },             
 ]

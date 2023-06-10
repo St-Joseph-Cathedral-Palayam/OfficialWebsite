@@ -31,35 +31,12 @@ export const Contact = () => {
             <div className={styles.contact_card}>
                 <GiIronCross />
                 <p>Parish Priest</p>
-                <p style={{marginTop:'-25px'}}>Very Rev. Msgr. Nicholas T</p>
+                <p style={{marginTop:'-25px', fontSize:"1.1rem"}}>Very Rev.Msgr.Wilfred.E</p>
                 <p>Asst. Parish Priest</p>
-                <p style={{marginTop:'-25px'}}>Rev. Fr. Carwin Roch </p>
-                <p style={{marginTop:'-25px'}}>Rev. Fr. Sojan</p>
+                <p style={{marginTop:'-25px' , fontSize:"1.1rem"}}>Rev.Fr. Bijo Bernad</p>
+                <p style={{marginTop:'-25px' , fontSize:"1.1rem"}}>Rev.Fr. Manish Peter</p>
 
             </div>
- 
-                {/* <tr>
-                    <td>Office Hours</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Catechism</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Parish Priest</td>
-                    <td>Very Rev. Msgr. Nicholas T</td>
-                </tr>
-                <tr>
-                    <td>Asst. Parish Priest</td>
-                    <td>Rev. Fr. Carwin Roch  </td><td>
-                      </td>
-                </tr>
-                 */}
-                
-                
-            {/* </table>  */}
-
         </div>
     )
 }

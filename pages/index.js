@@ -188,10 +188,10 @@ export default function Home({ data }) {
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/DSC01943.JPG" alt="blog" width="400" height="400" />
+              <Image src="/assets/photo_6.jpg" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
-              <h3>Very Rev. Msgr. Nicholas T</h3>
+              <h3>Very Rev.Msgr. Wilfred E</h3>
               <p>Parish Priest</p>
             </div>
           </div>
