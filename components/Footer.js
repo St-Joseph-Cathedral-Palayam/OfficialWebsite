@@ -26,7 +26,6 @@ const Footer = () => (
       <div className={styles.church__footer_links_div}>
         <h4>Website Design</h4>
         <p>Anil Antony</p>
-        <p>9037210582</p>
         <p>anilantony3134@gmail.com</p>
       </div>
     </div>
