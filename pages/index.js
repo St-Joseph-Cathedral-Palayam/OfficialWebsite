@@ -85,11 +85,11 @@ export default function Home({ data }) {
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
         {/* {popup.image && */}
-        (
+        {/* ( */}
           <Popup trigger={trigger} setTrigger={setTrigger}>
             <Image src={'/assets/newyearcard.jpg'} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup>
-        )
+        {/* ) */}
       {/* } */}
           <h1 className={styles.gradient__text} ref={el} />
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
@@ -141,7 +141,7 @@ export default function Home({ data }) {
         </div>
         <div className={styles.church__timing_container}>
           <div className={styles.church__timing_contained}>
-            <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="5.45am 6.30am  5.30pm" />
+            <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="6.00am  5.30pm" />
           </div>
           <div className={styles.church__timing_contained}>
             <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
