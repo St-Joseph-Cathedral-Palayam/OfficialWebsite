@@ -76,7 +76,7 @@ export default function Home({ data }) {
       setTrigger(true)
     }, 2000);
   }, [])
-
+  console.log(popup,'image')
   return (
     <>
       <Head>
@@ -85,11 +85,13 @@ export default function Home({ data }) {
       {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
         <div className={styles.stjoseph__header_content}>
-        {/* {popup.image &&
-        ( */}
+        {popup.image &&
+        (
           <Popup trigger={trigger} setTrigger={setTrigger}>
             <Image src={popup.image} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup>
+        )
+      }
           <h1 className={styles.gradient__text} ref={el} />
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
             St. Joseph’s Cathedral located at Palayam is an ancient church in India where believers from far and
