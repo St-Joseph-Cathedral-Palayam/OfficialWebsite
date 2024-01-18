@@ -83,7 +83,7 @@ export default function Home({ data }) {
       </Head>
       {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
-        <div className={styles.stjoseph__header_content}>
+        <div className={styles.stjoseph__header_content} style={{position: 'relative'}}>
         {/* {popup.image && */}
         {/* ( */}
           <Popup trigger={trigger} setTrigger={setTrigger}>
