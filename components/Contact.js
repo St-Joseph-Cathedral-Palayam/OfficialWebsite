@@ -33,11 +33,11 @@ export const Contact = () => {
                         <HiOfficeBuilding size={20} />
                         <h3 className="text-base font-semibold">Office Hours</h3>
                     </div>
-                    <p className="mt-3 text-gray-600 text-sm px-4">
+                    <p className="my-1 text-gray-600 text-md px-4">
                         9:00 AM – 2:00 PM
-                    </p>
-                    <p className="text-gray-600 text-sm px-4">
+                        |
                         3:00 PM – 7:00 PM
+                        (Sunday Holiday)
                     </p>
                 </div>
 
@@ -68,7 +68,7 @@ export const Contact = () => {
                                     alt={contactPriests.parishPriest.name}
                                     width="400"
                                     height="400"
-                                    className="w-[400px] h-[400px] rounded-full border-2 border-gray-300 shadow-md object-cover"
+                                    className="w-[400px] h-[400px] rounded-full border-2 border-gray-300 shadow-md"
                                 />
                                 <p className="text-base font-semibold text-gray-800 text-center">
                                     {contactPriests.parishPriest.name}
