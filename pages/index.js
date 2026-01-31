@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
   }
 }
 
-const Feature = ({ title, text1, text, text2, text3 }) => (
+const Feature = ({ title, text1, text, text2, text3, text4 }) => (
   <div className={styles.church__features_container__feature}>
     <div className={styles.church__features_container__feature_title}>
       <h1>
@@ -31,14 +31,17 @@ const Feature = ({ title, text1, text, text2, text3 }) => (
       <p className={styles.text1}>
         {text1}
       </p>
-      <p>
+      <p className={styles.text1}>
         {text}
       </p>
       <p className={styles.text1}>
         {text2}
       </p>
-      <p>
+      <p className={styles.text1}>
         {text3}
+      </p>
+      <p className={styles.text1}>
+        {text4}
       </p>
     </div>
 
@@ -83,14 +86,14 @@ export default function Home({ data }) {
       </Head>
       {/* Banner Start */}
       <div className={styles.stjoseph__header} id="home" >
-        <div className={styles.stjoseph__header_content} style={{position: 'relative'}}>
-        {/* {popup.image && */}
-        {/* ( */}
+        <div className={styles.stjoseph__header_content} style={{ position: 'relative' }}>
+          {/* {popup.image && */}
+          {/* ( */}
           {/* <Popup trigger={trigger} setTrigger={setTrigger}>
             <Image src={'/assets/Easter.jpeg'} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup> */}
-        {/* ) */}
-      {/* } */}
+          {/* ) */}
+          {/* } */}
           <h1 className={styles.gradient__text} ref={el} />
           <p>Welcome to the official website of the St. Joseph’s Metropolitan Cathedral, Trivandrum, Kerala. The
             St. Joseph’s Cathedral located at Palayam is an ancient church in India where believers from far and
@@ -141,22 +144,28 @@ export default function Home({ data }) {
         </div>
         <div className={styles.church__timing_container}>
           <div className={styles.church__timing_contained}>
-            <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text="  5:45am  (English)  7.00 am 8.45 am 5.00pm" text2="Weekdays" text3="6.00am  5.30pm" />
+            <Feature title="St.Joseph’s Cathedral, Palayam" text1="Sunday " text2="  5:45am 7.00 am 8.45 am  10.15am 3.30pm(English) 5.00pm 7.00pm"
+              text3="Weekdays" text4="6.00am  5.30pm" />
           </div>
           <div className={styles.church__timing_contained}>
-            <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am" />
+            <Feature title="St.Sebastian's Chapel, Kunnukuzhy" text1="Sunday " text="7:15 am" text2="Week days" text3="6.00 am" />
 
-            <Feature title="SantaMaria Oldage Home" text1="Sunday " text="6.00 am" text2="Weekdays" text3="6.30 pm" />
+            <Feature title="St. Peters's Church, Pattoor" text1="Sunday " text="9.00 am (English)" />
+          </div>
+          <div className={styles.church__timing_contained}>
+            <Feature title="St.Antony’s Chapel, Alummoodu" text1="Sunday " text="8.30 am"  text2="Tuesday" text3="5.30 pm" />
+
+            <Feature title="SantaMaria Oldage Home, Plamoodu" text1="Sunday " text="6.00 am" text2="Week days" text3="6.30 am" />
           </div>
           <div className={styles.church__timing_contained}>
             <Feature title="Kunnukuzhi Chapel" text1="Sunday " text="10.30 am" />
 
-            <Feature title="St.Joseph’s HSS Chapels" text1="Sunday " text="6.30 am" text2="Tuesday" text3="6.00 pm" />
+            <Feature title="St.Joseph’s HSS Chapels" text1="Week days " text="6.00 am" text2="Sunday" text3="6.30 am" />
           </div>
           <div className={styles.church__timing_contained}>
             <Feature title="Jubilee Hospital Chapel" text1="Everyday " text="6.00 am" />
 
-            <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="5.30 pm" text2="Saturday" text3="5.30 pm" />
+            <Feature title="FatimaMata Chapel, VanrosJn" text1="Sunday " text="6:30 am" text2="Week days" text3="6:30 am" />
           </div>
         </div>
 
@@ -199,8 +208,8 @@ export default function Home({ data }) {
       <div className={styles.stjoseph__facebook_container}>
         <Unit />
       </div>
-      <div className={styles.stjoseph__brand_container}>
-        <h1 className={styles.gradient__text} style={{textAlign: 'center'}}> "Contact Us" </h1>
+      <div className={styles.stjoseph__brand_container} id="contact" > 
+        <h1 className={styles.gradient__text} style={{ textAlign: 'center' }}  > "Contact Us" </h1>
         <Contact />
       </div>
     </>
