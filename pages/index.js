@@ -86,9 +86,9 @@ export default function Home({ data }) {
         <div className={styles.stjoseph__header_content} style={{position: 'relative'}}>
         {/* {popup.image && */}
         {/* ( */}
-          <Popup trigger={trigger} setTrigger={setTrigger}>
+          {/* <Popup trigger={trigger} setTrigger={setTrigger}>
             <Image src={'/assets/Easter.jpeg'} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
-          </Popup>
+          </Popup> */}
         {/* ) */}
       {/* } */}
           <h1 className={styles.gradient__text} ref={el} />
