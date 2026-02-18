@@ -1,14 +1,15 @@
-.stjoseph_updates_container{
+.stjoseph_updates_container {
     display: flex;
     justify-content: space-between;
     padding: 0 8rem;
 
 }
 
-.stjoseph_updates_cards{
-    margin: 1rem 1rem;
+.stjoseph_updates_cards {
+    margin: 1rem 0;
+    /* Adjusted margin for better fit in column */
     padding: 1rem 2rem;
-    width: 40vw;
+    width: 100%;
     background-color: rgb(250, 249, 249);
     border-radius: 10px;
     transition: 0.5s;
@@ -16,67 +17,68 @@
     justify-content: space-between;
 }
 
-.stjoseph_updates_image{
+.stjoseph_updates_image {
     height: 200px;
     width: 300px;
 }
 
-.stjoseph_updates_minicards{
+.stjoseph_updates_minicards {
     width: 20rem;
     margin: 1rem 1rem;
     padding: 1rem 1rem;
     background-color: rgb(198, 210, 233);
-    color:rgb(250, 249, 249);
+    color: rgb(250, 249, 249);
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.stjoseph_updates_minicards:hover{
-    box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
+.stjoseph_updates_minicards:hover {
+    box-shadow: 6px 3px 23px -8px rgba(0, 0, 0, 0.6);
 
 }
 
-.stjoseph_updates_cards:hover{
-    box-shadow: 6px 3px 23px -8px rgba(0,0,0,0.6);
+.stjoseph_updates_cards:hover {
+    box-shadow: 6px 3px 23px -8px rgba(0, 0, 0, 0.6);
 }
 
-.stjoseph_updates_updates{
+.stjoseph_updates_updates {
     flex: 1;
+    min-width: 0;
 }
 
-.stjoseph_updates_news{
+.stjoseph_updates_news {
     /* text-align: left; */
     flex: 1;
-    margin-right: 200px;
+    /* margin-right: 200px; REMOVED */
 }
 
-.stjoseph_updates_unit{
+.stjoseph_updates_unit {
     text-align: left;
     flex: 1;
 }
 
-.paginate{
+.paginate {
     list-style: none;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.paginate li a{
+.paginate li a {
     padding: 8px;
     font-weight: 500;
     border-radius: 5px;
 }
 
-.paginate li a:hover{
+.paginate li a:hover {
     color: blue;
     transition: 0.5s;
     cursor: pointer;
     /* padding: 8px; */
 }
 
-.activeLink{
+.activeLink {
     color: blue;
     background-color: white;
     border: 1px solid black;
@@ -84,7 +86,7 @@
     width: 20px;
 }
 
-.gradient__text{
+.gradient__text {
     background: var(--gradient-text);
     background-clip: text;
     text-align: center;
@@ -93,12 +95,12 @@
     -webkit-text-fill-color: transparent;
 }
 
-.stjoseph_updates_image{
+.stjoseph_updates_image {
     border-radius: 10px;
 }
 
 
-.updatesGrid{
+.updatesGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -107,27 +109,26 @@
 }
 
 
-@media screen and (max-width: 700px)  {
-    .updatesGrid{
+@media screen and (max-width: 700px) {
+    .updatesGrid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .stjoseph_updates_cards{
+    .stjoseph_updates_cards {
         width: auto;
     }
 
-    .stjoseph_updates_image{
+    .stjoseph_updates_image {
         width: 150px;
         height: 150px;
     }
 
-    .stjoseph_updates_container{
+    .stjoseph_updates_container {
         display: flex;
         justify-content: space-between;
-        padding: 0 ;
-    
+        padding: 0;
+
     }
 
-} 
-
+}

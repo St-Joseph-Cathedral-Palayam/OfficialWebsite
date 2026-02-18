@@ -38,12 +38,10 @@ export default function PostPage({ post }) {
             <div className={styles.post_tag}>
               {post.category}
             </div>
-            <p>Authored by</p>
-            <h3>
-              {post.authorName}
-            </h3>
             {post.cover &&
-              <Image src={post.cover} alt="cover" width="400" height="400" />}
+              <Image src={post.cover} alt="cover" width="400" height="400" 
+              className="object-contain"
+              />}
           </div>
           <div className={styles.post_description}>
             <ReactMarkdown>

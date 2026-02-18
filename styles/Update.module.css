@@ -5,12 +5,13 @@
     justify-content: space-between;
     padding: 0 8rem;
     padding-top: 1rem;
+    gap: 4rem;
 }
 
 .stjoseph_updates_cards{
     margin: 1rem 1rem;
     padding: 1rem 1rem;
-    width: 45vw;
+    width: 100%;
     background-color: rgb(250, 249, 249);
     border-radius: 10px;
     transition: 0.5s;
@@ -23,12 +24,13 @@
     flex: 1;
     font-family: var(--font-family);
     font-weight: 600;
+    min-width: 0; /* Important for flex child to allow shrinking */
 }
 
 .stjoseph_updates_news{
     /* text-align: left; */
     flex: 1;
-    margin-right: 200px;
+    /* margin-right: 200px; REMOVED */
 }
 
 .stjoseph_updates_unit{

@@ -1,18 +1,17 @@
 import React from 'react';
 import styles from '../styles/Update.module.css';
-import { Gallery } from "react-grid-gallery";
-import blogList from '../config/posts.json';
 import NewsCard from './NewsCard';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
-import  imagelist  from '../config/gallery.json';
+import imagelist from '../config/gallery.json';
+import MediaCarousel from './MediaCarousel';
 
 const Updates = ({ data }) => {
-    const images = imagelist.map(e => ({
-        src: e.images[0]
-    }));
-    const currentData = Object.values(data); 
-    blogList.slice(0, 5)
+    const currentData = Object.values(data);
+
+    // Select the latest gallery item to display
+    const featuredGallery = imagelist[0];
+
     return (
         <div className={styles.stjoseph_updates_container}>
             <div className={styles.stjoseph_updates_news}>
@@ -35,7 +34,13 @@ const Updates = ({ data }) => {
                 </Link>
 
                 <div className={styles.stjoseph_gallery_container}>
-                    <Gallery images={images}/>
+                    {/* <Gallery images={images}/> */}
+                    <MediaCarousel
+                        autoplay={true}
+                        autoplayDelay={5000}
+                        showThumbnails={false}
+                        title={featuredGallery ? featuredGallery.title : 'Gallery'}
+                    />
                 </div>
             </div>
 
