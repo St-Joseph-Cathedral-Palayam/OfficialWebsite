@@ -205,6 +205,9 @@ export default function Home({ data }) {
           </div>
         </div>
       </div>
+      <div className={styles.stjoseph__facebook_container}>
+        <Unit />
+      </div>
       <div className={styles.stjoseph__brand_container} id="contact" > 
         <h1 className={styles.gradient__text} style={{ textAlign: 'center' }}  > "Contact Us" </h1>
         <Contact />
