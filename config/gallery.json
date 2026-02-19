@@ -1,1 +1,35 @@
-[{"id":"9b6391872e64b","title":"neonshow","images":["/public/assets/images/ch01.jpg","/public/assets/images/ch02.jpg","/public/assets/images/ch03.jpg"]},{"id":"61f6b7acaa63","title":"വി. സെബസ്ത്യാനോസിന്റെ തിരുനാളിൻ്റെ ഭാഗമായി നടന്ന പ്രദിക്ഷണത്തിൽ നിന്നും","images":["/public/assets/images/whatsapp-image-2023-01-31-at-11.16.04-am.jpeg","/public/assets/images/whatsapp-image-2023-01-31-at-11.15.04-am.jpeg"]},{"id":"3dbfece112637","title":"New Bishop","images":["/public/assets/images/image6.jpg","/public/assets/images/dsc00886.jpg"]},{"id":"2cc04c71b2829","title":"Christmas Mass","images":["/public/assets/images/christmas1.jpg","/public/assets/images/xmas.jpg"]}]
+[
+    {
+        "id": "e27f1cda39e56",
+        "title": "വി. സെബസ്ത്യാനോസിന്റെ തിരുനാളിൻ്റെ ഭാഗമായി നടന്ന പ്രദിക്ഷണത്തിൽ നിന്നും",
+        "images": [
+            "/public/assets/images/whatsapp-image-2023-01-31-at-11.16.04-am.jpeg",
+            "/public/assets/images/whatsapp-image-2023-01-31-at-11.15.04-am.jpeg"
+        ]
+    },
+    {
+        "id": "b933b8c65de7c",
+        "title": "New Bishop",
+        "images": [
+            "/public/assets/images/image6.jpg",
+            "/public/assets/images/dsc00886.jpg"
+        ]
+    },
+    {
+        "id": "a6974a8345356",
+        "title": "Christmas Mass",
+        "images": [
+            "/public/assets/images/christmas1.jpg",
+            "/public/assets/images/xmas.jpg"
+        ]
+    },
+    {
+        "id": "38623af9149dd",
+        "title": "neonshow",
+        "images": [
+            "/public/assets/images/ch01.jpg",
+            "/public/assets/images/ch02.jpg",
+            "/public/assets/images/ch03.jpg"
+        ]
+    }
+]
