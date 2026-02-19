@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image'
+
 import Typed from 'typed.js';
 import styles from '../styles/Home.module.css'
 import blogList from '../config/posts.json';
@@ -90,7 +90,7 @@ export default function Home({ data }) {
           {/* {popup.image && */}
           {/* ( */}
           {/* <Popup trigger={trigger} setTrigger={setTrigger}>
-            <Image src={'/assets/Easter.jpeg'} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
+            <img src={'/assets/Easter.jpeg'} alt='popup image' width='400' height='800' className={styles.stjoseph_popup_image}/>
           </Popup> */}
           {/* ) */}
           {/* } */}
@@ -104,7 +104,7 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className={styles.stjoseph__header_image}>
-          <Image src="/assets/churchp.png" alt="Picture of the author"
+          <img src="/assets/churchp.png" alt="Picture of the author"
             width="1750"
             height="1700" />
         </div>
@@ -116,7 +116,7 @@ export default function Home({ data }) {
       {/* Patron Start */}
       <div className={styles.home__possibility}>
         <div className={styles.home__possibility_image}>
-          <Image className={styles.home__possibility_image_tag} src="/assets/stjoseph.jpg" alt="joseph" width="650" height="600" />
+          <img className={styles.home__possibility_image_tag} src="/assets/stjoseph.jpg" alt="joseph" width="650" height="600" />
         </div>
         <div className={styles.home__possibility_content}>
           <h4>
@@ -178,7 +178,7 @@ export default function Home({ data }) {
         <div className={styles.stjoseph__brand_container_cards}>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/DSC00595.jpg" alt="blog" width="400" height="400" />
+              <img src="/assets/DSC00595.jpg" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
               <h3>Most Rev. Dr. Thomas J Netto</h3>
@@ -187,7 +187,7 @@ export default function Home({ data }) {
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/011.JPG" alt="blog" width="400" height="400" />
+              <img src="/assets/011.JPG" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
               <h3>Most Rev. Dr. Christudas Rajappan</h3>
@@ -196,7 +196,7 @@ export default function Home({ data }) {
           </div>
           <div className={styles.stjoseph__blog_container__article}>
             <div className={styles.stjoseph__blog_container__article_image}>
-              <Image src="/assets/photo_6.jpg" alt="blog" width="400" height="400" />
+              <img src="/assets/photo_6.jpg" alt="blog" width="400" height="400" />
             </div>
             <div className={styles.stjoseph__blog_container__article_content}>
               <h3>Very Rev.Msgr. Wilfred E</h3>
