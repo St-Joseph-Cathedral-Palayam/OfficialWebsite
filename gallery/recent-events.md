@@ -1,7 +1,7 @@
 ---
 title: Recent Events
 Images:
-  - IMG_0947_hfkgp4.heic
+  - IMG_0967.webp
   - IMG_0944_yvj4kc.heic
   - IMG_0964_hhhbrq.heic
   - IMG_0967_o4gl28.heic
