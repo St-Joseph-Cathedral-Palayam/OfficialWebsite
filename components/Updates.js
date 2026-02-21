@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from '../styles/Update.module.css';
-import { Gallery } from "react-grid-gallery";
+import MediaCarousel from './MediaCarousel';
 import blogList from '../config/posts.json';
 import NewsCard from './NewsCard';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
-import  imagelist  from '../config/gallery.json';
+import imagelist from '../config/gallery.json';
 
 const Updates = ({ data }) => {
-    const images = imagelist.map(e => ({
-        src: e.images[0]
-    }));
+    // Get the latest images from all gallery entries
+    const images = imagelist.flatMap(e => e.images).slice(0, 6);
     const currentData = Object.values(data); 
     blogList.slice(0, 5)
     return (
@@ -35,7 +34,7 @@ const Updates = ({ data }) => {
                 </Link>
 
                 <div className={styles.stjoseph_gallery_container}>
-                    <Gallery images={images}/>
+                    <MediaCarousel images={images} />
                 </div>
             </div>
 
