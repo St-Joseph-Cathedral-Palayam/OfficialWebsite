@@ -4,6 +4,7 @@ import React from 'react'
 import Banner from '../../components/Banner';
 import imagelist from '../../config/gallery.json'
 import styles from '../../styles/Gallery.module.css';
+import MediaCarousel from '../../components/MediaCarousel';
 
 export const getStaticPaths = async () => {
     const paths = imagelist.map(e => ({ params: { id: e.id.toString() } }))
@@ -30,10 +31,7 @@ export default function Gallery({ post }) {
             <p> Back </p> 
         </Link>
         <div className={styles.stjoseph__gallery_container}>
-            {post.images.map((e) => (
-                <Image src={e} key={e} alt={e} height="300" width="300" />
-            )
-            )}
+            <MediaCarousel images={post.images} />
         </div>
     </>
 )}

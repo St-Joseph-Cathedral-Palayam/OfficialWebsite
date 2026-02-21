@@ -1,1 +1,50 @@
-[{"id":"fa30eb3eaea96","title":"വി. സെബസ്ത്യാനോസിന്റെ തിരുനാളിൻ്റെ ഭാഗമായി നടന്ന പ്രദിക്ഷണത്തിൽ നിന്നും","images":["/public/assets/images/whatsapp-image-2023-01-31-at-11.16.04-am.jpeg","/public/assets/images/whatsapp-image-2023-01-31-at-11.15.04-am.jpeg"]},{"id":"dca1fc827a839","title":"New Bishop","images":["/public/assets/images/image6.jpg","/public/assets/images/dsc00886.jpg"]},{"id":"245a8220bda92","title":"Christmas Mass","images":["/public/assets/images/christmas1.jpg","/public/assets/images/xmas.jpg"]},{"id":"163dbe6159755","title":"neonshow","images":["/public/assets/images/ch01.jpg","/public/assets/images/ch02.jpg","/public/assets/images/ch03.jpg"]}]
+[
+  {
+    "id": "e9743934816c8",
+    "title": "Recent Events",
+    "images": [
+      "/public/assets/images/IMG_0967.webp",
+      "/IMG_0944_yvj4kc.heic",
+      "/IMG_0964_hhhbrq.heic",
+      "/IMG_0967_o4gl28.heic",
+      "/IMG_0966_pywus2.heic",
+      "/IMG_0955_f3ween.heic",
+      "/IMG_0963_qgo5lc.heic",
+      "/IMG_0951_refnja.heic",
+      "/HolyWeek_auc49n.jpg"
+    ]
+  },
+  {
+    "id": "8ba6168995a04",
+    "title": "വി. സെബസ്ത്യാനോസിന്റെ തിരുനാളിൻ്റെ ഭാഗമായി നടന്ന പ്രദിക്ഷണത്തിൽ നിന്നും",
+    "images": [
+      "/public/assets/images/whatsapp-image-2023-01-31-at-11.16.04-am.jpeg",
+      "/public/assets/images/whatsapp-image-2023-01-31-at-11.15.04-am.jpeg"
+    ]
+  },
+  {
+    "id": "7a462a94d59be",
+    "title": "Christmas Mass",
+    "images": [
+      "/public/assets/images/christmas1.jpg",
+      "/public/assets/images/xmas.jpg"
+    ]
+  },
+  {
+    "id": "552c2ef230e4a",
+    "title": "neonshow",
+    "images": [
+      "/public/assets/images/ch01.jpg",
+      "/public/assets/images/ch02.jpg",
+      "/public/assets/images/ch03.jpg"
+    ]
+  },
+  {
+    "id": "26189812e517a",
+    "title": "New Bishop",
+    "images": [
+      "/public/assets/images/image6.jpg",
+      "/public/assets/images/dsc00886.jpg"
+    ]
+  }
+]

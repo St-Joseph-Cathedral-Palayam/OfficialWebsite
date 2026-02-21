@@ -37,10 +37,14 @@
 
 .container {
   position: relative;
-  margin-top: 50px;
-  width: 250px;
-  height: 300px;
-  margin: 50px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  aspect-ratio: 5 / 6; /* Maintain 250x300 look */
+  margin: 1rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .overlay {
@@ -49,74 +53,70 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
-  /* transition: background 0.5s ease; */
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s ease;
 }
 
 .container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
-.container img {
-  position: absolute;
-  width: 250px;
-  height: 300px;
-  left: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .title {
-  position: absolute;
-  width: 250px;
-  left: 0;
-  top: 120px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   color: white;
-  z-index: 1;
-  transition: top .5s ease;
+  z-index: 2;
+  transition: transform 0.4s ease;
+  padding: 0 1rem;
 }
 
 .container:hover .title {
-  top: 90px;
+  transform: translateY(-20px);
 }
 
 .button {
-  position: absolute;
-  width: 250px;
-  left: 0;
-  top: 180px;
   text-align: center;
   opacity: 0;
-  transition: opacity .35s ease;
+  transition: all 0.4s ease;
   color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 20%;
 }
 
 .button a {
-  width: 200px;
-  padding: 12px 48px;
+  padding: 10px 30px;
   text-align: center;
   color: white;
   border: solid 2px white;
-  z-index: 1;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button a:hover {
+  background-color: white;
+  color: black;
 }
 
 .container:hover .button {
   opacity: 1;
+  transform: translateY(-10px);
 }
-
-
 
 .cards_wrapper {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .arrowButton {
   color: gray;
-  height: '25px';
+  height: 25px;
   font-size: 2rem;
   margin-left: 1rem;
   cursor: pointer;
@@ -124,8 +124,9 @@
 
 .unitList_wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
 .paginate {
@@ -154,58 +155,4 @@
   border: 1px solid black;
   height: 20px;
   width: 20px;
-}
-
-@media screen and (max-width: 700px) {
-  .cards_wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card_container {
-    width: 20rem;
-  }
-
-  .unitList_wrapper {
-    padding: 1rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0;
-    /* grid-gap: 3rem; */
-  }
-
-  .container {
-    margin: 0;
-    width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .container img {
-    width: 300px;
-  }
-
-  .overlay {
-    background: rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    /* box-shadow: 1,1,1,1; */
-  }
-
-  .title {
-    left: 20px;
-  }
-
-  .gradient__text {
-    font-size: 0.2rem;
-  }
-
-  .button {
-    opacity: 1;
-    left: 20px;
-    bottom: 40px;
-  }
-
-  .stjoseph__brand_title {
-    font-size: 0.2rem;
-  }
 }

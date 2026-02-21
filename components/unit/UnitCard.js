@@ -9,19 +9,21 @@ const UnitCard = ({ month, img, file, isUnit = false }) => {
       {
         isUnit ? (
           <Link href={`gallery/${file}`} key={month}>
-            <Image src={img} alt="" width="250" height="300" />
-            <p className={styles.title}>{month.substring(0, 10)}</p>
-            <div className={styles.overlay}></div>
-            <div className={styles.button}> View </div>
+            <Image src={img} alt="" fill style={{ objectFit: 'cover' }} />
+            <div className={styles.overlay}>
+               <p className={styles.title}>{month.substring(0, 15)}</p>
+               <div className={styles.button}> View </div>
+            </div>
           </Link>
         )
           :
           (
             <>
-              <Image src={img} alt="" width="250" height="300" />
-              <p className={styles.title}>{month.substring(0, 10)}</p>
-              <div className={styles.overlay}></div>
-              <div className={styles.button}><a href={file}> View </a></div>
+              <Image src={img} alt="" fill style={{ objectFit: 'cover' }} />
+              <div className={styles.overlay}>
+                 <p className={styles.title}>{month.substring(0, 15)}</p>
+                 <div className={styles.button}><a href={file}> View </a></div>
+              </div>
             </>
           )
       }
