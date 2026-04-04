@@ -109,7 +109,8 @@ export default function Home({ data }) {
       </div>
 
       {/* PDF Viewer Start */}
-      <PdfPreview />
+    {/* Uncomment for any new pdfs */}
+      {/* <PdfPreview /> */}
 
       {/* Blog Start */}
       <Updates data={data} />

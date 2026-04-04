@@ -3,6 +3,7 @@ import styles from "../../styles/Posts.module.css";
 import blogList from "../../config/posts.json";
 import ReactMarkdown from "react-markdown";
 import { MiniNewsCard } from "../../components/NewsCard";
+import CloudinaryGallery from "../../components/CloudinaryGallery";
 
 export const getStaticPaths = async () => {
   const paths = blogList.map((e) => ({ params: { id: e.id.toString() } }));
@@ -23,7 +24,6 @@ export const getStaticProps = async (context) => {
 
 export default function PostPage({ post }) {
   const router = useRouter();
-  const id = router.query.id;
   const currentData = Object.values(blogList);
   currentData.slice(0, 5);
   return (
@@ -34,7 +34,7 @@ export default function PostPage({ post }) {
             <h1>{post.title}</h1>
             <div className={styles.post_tag}>{post.category}</div>
             <h3>{post.authorName}</h3>
-            {post.cover && (
+            {post.cover && !post.cloudinaryFolder && (
               <img
                 src={post.cover}
                 alt="cover"
@@ -46,6 +46,15 @@ export default function PostPage({ post }) {
           </div>
           <div className={styles.post_description}>
             <ReactMarkdown>{post.description}</ReactMarkdown>
+
+            {/* Display Cloudinary Gallery if cloudinaryFolder is present */}
+            {post.cloudinaryFolder && (
+              <div style={{ marginTop: "30px" }}>
+                <h2 style={{ marginBottom: "20px" }}>Gallery</h2>
+                <CloudinaryGallery folderName={post.cloudinaryFolder} />
+              </div>
+            )}
+
             <div className={styles.post_updates}>
               {currentData.map(
                 (e) =>
